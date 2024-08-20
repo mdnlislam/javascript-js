@@ -5,12 +5,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Media Example</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+        <style>
+          .menu_ber{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid green;
+            background-color: bisque;
+            padding: 5px;
+          }
+          .text{
+            display: flex;
+            gap: 7px;
+          }
+          .text a{
+            text-decoration: none;
+            font-size: 35px;
+          }
+          .menu_ber p{
+            display: none;
+          }
+          .menu_ber{
+            align-items: center;
+          }
+
+       @media screen and (max-width:600px) {
+        .menu_ber p{
+          display: block;
+          align-items: center;
+          justify-content: center;
+        }
+        .text{
+          display: none;
+        }
+        
+        .menu_ber{
+          align-items: center;
+          
+        }
+        
+        
+       }
+
+        </style>
     </head>
 
 
     <body>
         
-  al l the best
 
+      <div class="menu_ber">
+          <p><i class="fa-solid fa-bars"></i></p>
+        <div class="text">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Card</a>
+        </div>
+
+           <div class="text_bvt">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search...." name="search">
+ 
+           </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+  
+<script src="index.js"></script>
     </body>
 </html>
