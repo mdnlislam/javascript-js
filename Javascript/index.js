@@ -9,33 +9,62 @@ console.log(result)
 
 
 
+   
+   function subtraction(a,b) {
+      return a-b;
+   }
+    result = subtraction(5,5);
+   console.log(result);
 
-function subtraction() {
-      console.log(x-y)
-}
-subtraction()
+
+
+   function multiplication(a,b) {
+      return a*b;
+   }
+   result = multiplication(7,5);
+   console.log(result)
 
 
 
-function multiplication () {
-      console.log(x*y)
-}
-multiplication()
+   function exponentiation(a,b) {
+      return a**b;
+   }
+       result =exponentiation(3,2);
+       console.log(result)  
 
-function exponentiation() {
-      console.log(x**y)
-}
-exponentiation()
+       function divison(a,b) {
+            return a/b;
+       }
+       result = divison(25,8);
+       console.log(result)
 
-function divison() {
-      console.log(x/y)
-}
-divison()
 
-function modulus () {
-      console.log(x%y)
-}
-modulus()
+
+       function modulus(a,b) {
+            return a%b;
+       }
+       result = modulus(10,2);
+       console.log(result)
+
+
+       function increment(a,b){
+            return a+b // '++';
+       }
+       result = increment(3,3);
+       console.log(result)
+
+
+       function decrement(a,b) {
+            return a-b // '-';
+
+       }
+       result =decrement(6,3);
+       console.log(result)
+
+
+
+
+
 
 
 // function increment () {
