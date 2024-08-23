@@ -71,13 +71,27 @@ let result = addisional(5,15,5,5)
   let c = true ;
   console.log(typeof c)
 //   const person = {firstName:"John", lastName:"Doe"};
-  const person = {firstName:"John", "0":"Doe"};
+  const person = {firstName:"John", "dd":"Doe"};
 
   //   console.log(typeof person)
-  console.log( person.firstName,person[0])
+  console.log( person.firstName,person["dd"])
 
 
 
+  console.log(typeof Number("20"))
+
+  console.log( typeof Number(true))
+
+  console.log(Number(false))
+
+  const number = 2.5648;
+  console.log(number.toPrecision(2))
+  
+
+
+
+  
+  
 
 
 
