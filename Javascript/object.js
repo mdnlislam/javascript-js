@@ -24,7 +24,7 @@ person.roll=36;
 // const cars =["BMW","volvo","toyta",person]
 // console.log(cars[1],cars[cars.length-1],)
 
-let x =3,y = 2,result;
+let x =2,y = 2,result;
 if(x === 1){
     person.name  = "rakib"
 } else if(x === 2){
@@ -34,7 +34,9 @@ if(x === 1){
     person.name  = "name not found"
     
 
-}
+} 
 console.log(person.name)
 
 
+   let num =20;
+   console.log(num);
