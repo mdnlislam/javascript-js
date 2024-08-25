@@ -92,36 +92,67 @@
 //   console.log(num)
 
 //   let d = 2, s = 4 result7;
-const person = {firstName:"John", lastName:"Doe",name:""};
+// const person = {firstName:"John", lastName:"Doe",name:""};
   
 
-let x =3,y = 2,result;
-if(x === 1){
-    person.name  = "rakib"
-} else if(x === 2){
-    person.name  = "abutaher kaka"
+// let x =3,y = 2,result;
+// if(x === 1){
+//     person.name  = "rakib"
+// } else if(x === 2){
+//     person.name  = "abutaher kaka"
 
-} else{
-    person.name  = "name not found"
+// } else{
+//     person.name  = "name not found"
     
 
-} 
-console.log(person.name)
+// } 
+// console.log(person.name)
 
 
-let firstName = "Md.Nurul";
-let lastName = " islam"
+// let firstName = "Md.Nurul";
+// let lastName = " islam"
  
-let fullname = firstName + lastName;
-console.log (fullname + " may name is " )
+// let fullname = firstName + lastName;
+// console.log (fullname + " may name is " )
 
 
-let num1 = 20;
-let num2 = 30;
+// let num1 = 20;
+// let num2 = 30;
 
-console.log("num1 =" + num1 + " num2 " + num2)
+// console.log("num1 =" + num1 + " num2 " + num2)
 
-  
+
+
+//   this work Librory function for String
+//     check this character
+
+
+ let text1 = "Bangladesh"
+
+ 
+ console.log(text1.charAt(2));
+ 
+
+    function capitalizeWords(str) {
+        return str.split (' ').map(function(word){
+            // return word.charAt(0).toUpperCase() + word.slice(1);
+
+            const firstWord = word.charAt(0);
+            const firstWordUp = firstWord.toUpperCase();
+            const firstCharRemove = word.slice(1);
+            console.log({ firstWord, firstWordUp, firstCharRemove });
+            
+            return firstWordUp + firstCharRemove;
+
+
+        }).join(' ');
+    }
+
+    let text = "hello word , how are you";
+    let capitalizedtext = capitalizeWords(text);
+    console.log(capitalizedtext);
+
+
   
 
 
