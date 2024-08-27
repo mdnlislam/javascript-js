@@ -127,33 +127,48 @@
 //     check this character
 
 
- let text1 = "Bangladesh"
+//  let text1 = "Bangladesh"
 
  
- console.log(text1.charAt(2));
+//  console.log(text1.charAt(2));
  
 
-    function capitalizeWords(str) {
-        return str.split (' ').map(function(word){
+//     function capitalizeWords(str) {
+//         return str.split (' ').map(function(word){
             // return word.charAt(0).toUpperCase() + word.slice(1);
 
-            const firstWord = word.charAt(0);
-            const firstWordUp = firstWord.toUpperCase();
-            const firstCharRemove = word.slice(1);
-            console.log({ firstWord, firstWordUp, firstCharRemove });
+    //         const firstWord = word.charAt(0);
+    //         const firstWordUp = firstWord.toUpperCase();
+    //         const firstCharRemove = word.slice(1);
+    //         console.log({ firstWord, firstWordUp, firstCharRemove });
             
-            return firstWordUp + firstCharRemove;
+    //         return firstWordUp + firstCharRemove;
 
 
-        }).join(' ');
-    }
+    //     }).join(' ');
+    // }
 
-    let text = "hello word , how are you";
-    let capitalizedtext = capitalizeWords(text);
-    console.log(capitalizedtext);
+    // let text = "hello word , how are you";
+    // let capitalizedtext = capitalizeWords(text);
+    // console.log(capitalizedtext);
+   
 
 
-  
+    let num1 = prompt ("Enter First Number : ");
+    let num2 = prompt ("Enter Second Number : ");
+
+
+    num1 = parseInt(num1,10);
+    num2 = parseInt(num2,10);
+
+
+    let sum,sub ;
+
+    sum = num1 + num2;
+      
+    document.write( num1 + "+" + num2 +"=" + sum);
+
+
 
 
 
