@@ -154,21 +154,53 @@
    
 
 
-    let num1 = prompt ("Enter First Number : ");
-    let num2 = prompt ("Enter Second Number : ");
+    // let num1 = prompt ("Enter First Number : ");
+    // let num2 = prompt ("Enter Second Number : ");
 
 
-    num1 = parseInt(num1,10);
-    num2 = parseInt(num2,10);
+    // num1 = parseInt(num1,10);
+    // num2 = parseInt(num2,10);
 
 
-    let sum,sub ;
+    // let sum,sub ;
 
-    sum = num1 + num2;
+    // sum = num1 + num2;
       
-    document.write( num1 + "+" + num2 +"=" + sum);
+    // document.write( num1 + "+" + num2 +"=" + sum);
 
 
+
+// Area of Shapes
+
+// let base =prompt("enter base = ");
+// let height = prompt ("enter height = ");
+
+// let area = base * height
+
+// console.log("area = " + area );
+
+
+// const readline = require('readline');
+
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// rl.question('Enter base = ', (base) => {
+//     rl.question('Enter height = ', (height) => {
+//         let area = base * height;
+//         console.log('Area = ' + area);
+//         rl.close();
+//     });
+// });
+
+
+
+        let cels = parseFloat (prompt("enter celsius ="));
+
+        let farn = (cels *(5/9)) + 32;
+        document.write("farent = " + farn);
 
 
 
