@@ -195,15 +195,29 @@
 //     });
 // });
 
+  
+//    let num1 = 30;
+//    let num2 = 50;
+//    let num3 = 40;
+
+//    console.log(num1>num2 && num1<num2)
+
+//    console.log(num1<num2 && num1<num2)
 
 
-        let cels = parseFloat (prompt("enter celsius ="));
+//    console.log(num1<num2 || num1>num3)
 
-        let farn = (cels *(5/9)) + 32;
-        document.write("farent = " + farn);
+//    console.log(num1>num2 || num1>num3)
+
+//    console.log(!true)
+
+//    console.log(!false)
 
 
 
+
+
+     
 
 // function increment () {
 //       console.log(x++y)
@@ -216,6 +230,33 @@
 
 // }
 // decrement()
+
+
+   let num = 5;
+
+   if (num % 2 == 0)
+   console.log("Even")
+
+   else
+   console.log("odd")
+
+   
+   let num1 = prompt ("Enter a Number :  ");
+   if (num1 > 0 )
+        console.log("positive");
+
+   else if (num1 < 0)
+
+        console.log("Negative");
+
+
+        else 
+        console.log("Zero")
+
+
+
+
+
 
 
 
