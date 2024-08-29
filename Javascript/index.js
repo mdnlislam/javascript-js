@@ -232,30 +232,38 @@
 // decrement()
 
 
-   let num = 5;
+//    let num = 5;
 
-   if (num % 2 == 0)
-   console.log("Even")
+//    if (num % 2 == 0)
+//    console.log("Even")
 
-   else
-   console.log("odd")
+//    else
+//    console.log("odd")
 
    
-   let num1 = prompt ("Enter a Number :  ");
-   if (num1 > 0 )
-        console.log("positive");
+//    let num1 = prompt ("Enter a Number :  ");
+//    if (num1 > 0 )
+//         console.log("positive");
 
-   else if (num1 < 0)
+//    else if (num1 < 0)
 
-        console.log("Negative");
-
-
-        else 
-        console.log("Zero")
+//         console.log("Negative");
 
 
+//         else 
+//         console.log("Zero")
 
 
+   
+const cars = ["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+
+let text = " ";
+for (let i =0; i<cars.length; i++) {
+  text += cars[i] + "<br>"
+}
+
+document.getElementById("demo"). 
+innerHTML = text;
 
 
 

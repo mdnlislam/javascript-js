@@ -40,3 +40,12 @@ console.log(person.name)
 
    let num =20;
    console.log(num);
+
+
+
+   for ( let x =2; x<=100 ; x=x+2) {
+
+
+    document.write(" " + x);
+
+   }
