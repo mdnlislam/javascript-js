@@ -1,4 +1,42 @@
+
+// document.title = 'play with DOm';
+
+// console.log(document.forms)
+
+
+
+//  const person = { firstName:"MD.Nurul",LastNsme:"Islam" };
+
+//  console.log(0)
+
+
+
+
+ const person = {
+    name: ["Bob", "Smith"],
+    age: 32,
+     
+      console.log(`${this.name[name]} ${this.name[1]} is ${this.age} years old.`)
+    
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 // let name="rakib"
+
+
+
+
 // let y = 5;
 // let x = 10;
 // let z =10;
@@ -210,13 +248,35 @@
 //         else
 //         console.log("Zero")
 
-let marks = prompt("Enter your marks :  ");
 
-if (marks >= 80) {
-  console.log("A+");
-} else {
-  console.log("fail");
-}
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let marks = prompt("Enter your marks :  ");
+
+// if (marks >= 80) {
+//   console.log("A+");
+// } else {
+//   console.log("fail");
+// }
 
 // console.log(result+5)
 // console.log(y+x,'y+x');
