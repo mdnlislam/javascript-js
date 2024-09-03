@@ -76,26 +76,35 @@
 
 
 
-    const mobailmodel= {
-
-      model:"mmmmm",
-      brans:"nokia",
-      colour:"black",
+  const product= {
 
 
-    }
+    name:"teliphone",
+    color: "black,white,yalow",
+    size: "mx4,mb6,mv5",
+
+    brandModel:function() {
+     return `product name  is ${this.name} and
+     product color ${this.color}`;
+
+    },
+   
+     battery:{
+       hmb:"rakib"
+
+     }, 
+      
+  };
+
+  delete product.color
+
+   console.log(Object.values(product))
+
+   console.log(product.hasOwnProperty('colors'),product.brandModel());
+    console.log(product.battery.hmb)
 
 
-    mobailmodel.model='h2j6'
-    mobailmodel.id='01234'
-    Object.freeze(mobailmodel);
-
-    mobailmodel.brans='html'
-
-    console.log(mobailmodel.model,mobailmodel.id,mobailmodel.brans)
 
 
-
-
-
+  
 
