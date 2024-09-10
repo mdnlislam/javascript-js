@@ -51,10 +51,11 @@
 
 let produc = ["BMW", "RAKIB", "ALAMIN", "AlMON"];
 
-// let product = produc.join(" 2 ");
-if ((pen = "BMW>x"));
-
-console.log(pen);
+let text = "";
+for (let i = 0; i < produc.length; i++) {
+  text += produc[i];
+}
+console.log(text);
 
 // let per = produc.copyWithin(2);
 
