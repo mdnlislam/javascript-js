@@ -1,110 +1,49 @@
+// const produc = document.querySelector("h3");
 
+// produc.addEventListener("click", function () {
+//   console.log("allah", "click");
+// });
 
-// const person ={
-// Name:"md.Nurul islam",
-// Email:"nurulislam8433@gmail.com",
-// Phone:"01736126730",
-// Addes:"gazipur"
+// produc.addEventListener("mouseover", function () {
+//   console.log("allah", "mouseover");
+// });
 
-// }
+const product = document.querySelector("h4");
 
+console.log(product);
 
-// person.Name='title'
+product.addEventListener("click", function () {
+  console.log("allah", "click");
+});
 
-// person.Addes ='Tangail'
+product.addEventListener("mouseover", function () {
+  console.log("allah", "mouseover");
+});
 
-// const persons =[person]
+product.addEventListener("mouseleave", function () {
+  console.log("bismillah", "mouseleave");
+});
 
-// console.log("Name: " + person["Name"])
+product.addEventListener("keydown", function () {
+  console.log("alhamdulillah", "keydown");
+});
 
-// console.log("Addes: " + person["Addes"])
+product.addEventListener("keyup", function () {
+  console.log("alhamdulillah", "keyup");
+});
 
-// console.log(person)
+const inputBox = document.querySelector("#inputbox");
+const result = document.querySelector("result");
+inputBox.addEventListener("keydown", function () {
+  console.log("ddddd", "keydown");
+});
 
+// product.addEventListener("mouseout", function () {
+//   document.write("allah", "mouseout");
+// });
 
+// produc.addEventListener("click", function () {
+//   console.log("allah", "click");
+// });
 
-//     let names = new Array (1,2,3, "harry",undefined);
-
-//     console.log(names[1]);
-
-
-
-
-//     const person1 = {
-//       name: "Chris",
-//       introduceSelf() {
-//         console.log(`Hi! I'm ${this.name}.`);
-//       },
-//     };
-    
-//     const person2 = {
-//       name: "Deepti",
-//       // roll:"1",
-//       introduceSelf() {
-//         console.log(`Hi! I'm ${this.name}. nurul`);
-//         return `Hi! I'm ${this.name}. return`
-//       },
-//     };
-
-//     // name ='roll'
-
-//     person2.name='raki'
-//     person2.roll= function person5() {
-
-//       return  this.name
-
-
-
-
-//     }
-
-    // console.log(person2.introduceSelf(), "rakib")
-    // console.log(person2.name,person2.roll())
-
-     
-
-
-
-    // function createPerson(name) {
-    //   const obj = {};
-    //   obj.name = name;
-    //   obj.introduceSelf = function () {
-    //     console.log(`Hi! I'm ${this.name}.`);
-    //   };
-    //   return obj;
-    // }
-
-
-
-  const product= {
-
-
-    name:"teliphone",
-    color: "black,white,yalow",
-    size: "mx4,mb6,mv5",
-
-    brandModel:function() {
-     return `product name  is ${this.name} and
-     product color ${this.color}`;
-
-    },
-   
-     battery:{
-       hmb:"rakib"
-
-     }, 
-      
-  };
-
-  delete product.color
-
-   console.log(Object.values(product))
-
-   console.log(product.hasOwnProperty('colors'),product.brandModel());
-    console.log(product.battery.hmb)
-
-
-
-
-  
-
+// console.log(produc);
