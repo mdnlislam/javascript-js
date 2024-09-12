@@ -8,35 +8,35 @@
 //   console.log("allah", "mouseover");
 // });
 
-const product = document.querySelector("h4");
+const nameWrapper = document.querySelector(".selector-user-name:");
+function namestter(name) {
+  nameWrapper.innerHTML = name;
+}
+// product.addEventListener("click", function () {
+//   console.log("allah", "click");
+// });
 
-console.log(product);
+// product.addEventListener("mouseover", function () {
+//   console.log("allah", "mouseover");
+// });
 
-product.addEventListener("click", function () {
-  console.log("allah", "click");
-});
+// product.addEventListener("mouseleave", function () {
+//   console.log("bismillah", "mouseleave");
+// });
 
-product.addEventListener("mouseover", function () {
-  console.log("allah", "mouseover");
-});
+// product.addEventListener("keydown", function () {
+//   console.log("alhamdulillah", "keydown");
+// });
 
-product.addEventListener("mouseleave", function () {
-  console.log("bismillah", "mouseleave");
-});
+// product.addEventListener("keyup", function () {
+//   console.log("alhamdulillah", "keyup");
+// });
 
-product.addEventListener("keydown", function () {
-  console.log("alhamdulillah", "keydown");
-});
-
-product.addEventListener("keyup", function () {
-  console.log("alhamdulillah", "keyup");
-});
-
-const inputBox = document.querySelector("#inputbox");
-const result = document.querySelector("result");
-inputBox.addEventListener("keydown", function () {
-  console.log("ddddd", "keydown");
-});
+// const inputBox = document.querySelector("#inputbox");
+// const result = document.querySelector("result");
+// inputBox.addEventListener("keydown", function () {
+//   console.log("ddddd", "keydown");
+// });
 
 // product.addEventListener("mouseout", function () {
 //   document.write("allah", "mouseout");

@@ -33,11 +33,61 @@
         width: 300px;
         overflow: scroll;
       }
+
+      .wrapper {
+        display: flex;
+        border: 1px solid green;
+        width: 70%;
+        margin: 0 auto;
+        min-height: 300px;
+      }
+
+      .user {
+        width: 30%;
+        border-right: 1px solid red;
+      }
+      .message {
+        width: 80%;
+      }
+      .user_list {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .user_list li {
+        cursor: pointer;
+      }
     </style>
   </head>
 
   <body>
-    <div class="chat_list">
+    <div class="wrapper">
+      <div class="user">
+        <ul class="user_list">
+          <li onclick="nameSetter('Rakib')">Rakib</li>
+          <li onclick="nameSetter('Rony')">Rony</li>
+          <li onclick="nameSetter('Akramul')">Akramul</li>
+        </ul>
+      </div>
+  
+      <div class="message">
+        <h1>Name: <span class="selector-user-name"></span></h1>
+        <div class="message_container"></div>
+      </div>
+    </div>
+  
+    <script>
+     const nameWrapper = document.querySelector(".selector-user-name");
+     const para =document.querySelector(".message_container");
+     function nameSetter(name) {
+      nameWrapper.innerText =name;
+      para.innerHTML =`<p class="para">messege</p>`;
+     }
+    </script>
+  </body>
+  
+    <!-- <div class="chat_list">
       <div class="img">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
@@ -109,14 +159,8 @@
           <p>assalamu alaikum</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div>
-      <h4>Allah help me</h4>
-    </div>
-
-    <input type="text" id="inputbox" placeholder="Alhamdulillah" />
-
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
   </body>
 </html>
