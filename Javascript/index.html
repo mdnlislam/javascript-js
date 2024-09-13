@@ -73,17 +73,17 @@
   
       <div class="message">
         <h1>Name: <span class="selector-user-name"></span></h1>
-        <div class="message_container"></div>
+        <div class="message_container"><p class="para">masseg</p></div>
       </div>
-    </div>
+    </div>   
   
     <script>
      const nameWrapper = document.querySelector(".selector-user-name");
-     const para =document.querySelector(".message_container");
+     const container =document.querySelector(".message_container");
      function nameSetter(name) {
       nameWrapper.innerText =name;
-      para.innerHTML =`<p class="para">messege</p>`;
-     }
+      container.innerHTML +=`<p class="para">${name}</p>`;
+     }       
     </script>
   </body>
   
