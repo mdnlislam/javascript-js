@@ -15,76 +15,36 @@
       src="https://script.4dex.io/localstore.js"
     ></script>
     <style>
-      .img {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
 
-      .img img {
-        height: 70px;
-        border: 2px solid green;
-        border-radius: 50%;
-      }
 
-      .chat_list {
-        border: 2px solid greenyellow;
-        height: 100%;
-        width: 300px;
-        overflow: scroll;
-      }
-
-      .wrapper {
-        display: flex;
-        border: 1px solid green;
-        width: 70%;
-        margin: 0 auto;
-        min-height: 300px;
-      }
-
-      .user {
-        width: 30%;
-        border-right: 1px solid red;
-      }
-      .message {
-        width: 80%;
-      }
-      .user_list {
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .user_list li {
-        cursor: pointer;
-      }
     </style>
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="user">
-        <ul class="user_list">
-          <li onclick="nameSetter('Rakib')">Rakib</li>
-          <li onclick="nameSetter('Rony')">Rony</li>
-          <li onclick="nameSetter('Akramul')">Akramul</li>
-        </ul>
-      </div>
-  
-      <div class="message">
-        <h1>Name: <span class="selector-user-name"></span></h1>
-        <div class="message_container"><p class="para">masseg</p></div>
-      </div>
-    </div>   
-  
-    <script>
-     const nameWrapper = document.querySelector(".selector-user-name");
-     const container =document.querySelector(".message_container");
-     function nameSetter(name) {
-      nameWrapper.innerText =name;
-      container.innerHTML +=`<p class="para">${name}</p>`;
-     }       
-    </script>
+    
+  <h2> What can javascript do ?</h2>
+
+
+  <p class="demo"> A paragraph.</p>
+
+  <div class="messeg_container">
+
+  </div>
+
+
+   <button type="button"onclick ="myfunction()">try it</button>
+
+
+   <script>
+    function myfunction() {
+      document.querySelector(".demo").innerHTML='<p>paragraph change.</p>'
+
+
+    }
+
+   </script>
+
+
   </body>
   
     <!-- <div class="chat_list">

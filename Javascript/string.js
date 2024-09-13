@@ -1,18 +1,14 @@
+// let text="Bangladesh , is a small county,city,"
 
-  // let text="Bangladesh , is a small county,city,"
+// let result=text.split(',').join('.');
 
-  // let result=text.split(',').join('.');
-
-  // console.log(result)
-
+// console.log(result)
 
 //  let text="   BANGLADESH IS A SMALL COUNTY VERY NICE DAY"
 
 //           text=text.length;
 
-
 //           console.log(text)
-
 
 //       let text1 ="hello work"
 
@@ -26,13 +22,11 @@
 
 //       console.log(text1.charAt(1))
 
-
 //       console.log(text1.slice(2,8))
 
 //       console.log(text1.slice(-3,-2))
 
 //        console.log(text1.substr (3,5))
-
 
 //        let text7 ="Rakib"
 //        let text8="Nahid"
@@ -42,35 +36,29 @@
 //         let text9= text7.trim()
 //        console.log(text9.length)
 
+//  let text ="5"
 
+// //  text =text.padStart(7,"1")
 
-  //  let text ="5"
+//  let text1 =text.padEnd(4,"2")
 
-  // //  text =text.padStart(7,"1")
+//  console.log(text)
 
-  //  let text1 =text.padEnd(4,"2")
+//  console.log(text1)
 
-  //  console.log(text)
+// let text ="HELLO THE BEST "
 
-  //  console.log(text1)
+//   resust= text.repeat(5)
 
+//   console.log(resust)
 
-  // let text ="HELLO THE BEST "
+// let text1 ="the best of luck, the , join, count,"
 
-  //   resust= text.repeat(5)
+// resust1 = text1.replaceAll(",",".")
 
-  //   console.log(resust)
+// console.log(resust1)
 
- 
-  // let text1 ="the best of luck, the , join, count,"
+let text = "Rakib";
 
-
-  // resust1 = text1.replaceAll(",",".")
-
-  // console.log(resust1)
-
-
-let text="Rakib"
- 
-result = text.repeat(5)
-console.log(result)
+result = text.repeat(5);
+console.log(result);
