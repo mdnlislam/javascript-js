@@ -21,27 +21,32 @@
   </head>
 
   <body>
-    
-  <h2> What can javascript do ?</h2>
+      <h1>javascript HTML Events</h1>
+      <h2 class="h2">the onclick Attribute.jhfdia;k</h2>
 
-
-  <p class="demo"> A paragraph.</p>
-
-  <div class="messeg_container">
-
-  </div>
-
-
-   <button type="button"onclick ="myfunction()">try it</button>
-
-
+       <!-- <h2 onclick="queueMicrotask("")>Click on this text !</h2> -->
+     <p class="messege">empty</p>
    <script>
-    function myfunction() {
-      document.querySelector(".demo").innerHTML='<p>paragraph change.</p>'
 
+const heading1 =document.querySelector("h1")
+const heading2 =document.querySelector("h2")
+const messege =document.querySelector(".messege")
+    
 
-    }
+    heading1.addEventListener('click',function(){
+      heading2.innerText='Rakib';
+      messege.innerText='bisnilla'
+    })
+//    const product=document.querySelector("h2")
+//    product.addEventListener("click", function () {
+//   // console.log("allah", "click");
+//   this.innerHTML= "<h2>the onclick Attribute/</h2>";
+//  });
 
+      // const product =document.querySelector(h2)
+      //   product.addEventListener("click",function(){
+      //     this.innerText= product;
+      //   })
    </script>
 
 
