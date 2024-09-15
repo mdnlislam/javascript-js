@@ -1,3 +1,9 @@
+const whatsapp = document.querySelector(".img");
+
+whatsapp.addEventListener("click", function () {
+  heading2.innerText = "allah";
+});
+
 // const produc = document.querySelector("h3");
 
 // produc.addEventListener("click", function () {
@@ -8,10 +14,10 @@
 //   console.log("allah", "mouseover");
 // });
 
-const nameWrapper = document.querySelector(".selector-user-name:");
-function namestter(name) {
-  nameWrapper.innerHTML = name;
-}
+// const nameWrapper = document.querySelector(".selector-user-name:");
+// function namestter(name) {
+//   nameWrapper.innerHTML = name;
+// }
 // product.addEventListener("click", function () {
 //   console.log("allah", "click");
 // });
