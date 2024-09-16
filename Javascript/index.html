@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="img">
+      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
           alt=""
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-      <div class="img">
+      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
           alt=""
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="img">
+      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
           alt=""
@@ -105,7 +105,7 @@
         </div>
       </div>
 
-      <div class="img">
+      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
           alt=""
@@ -117,13 +117,13 @@
         </div>
       </div>
 
-      <div class="img">
+      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
         <img
           src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
           alt=""
         />
 
-        <div class="img_con">
+        <div class="img_con" onclick="showDetails('abu taher kaka','017xxxxxxx')">
           <h3>Md.Jabet</h3>
           <p>assalamu alaikum</p>
         </div>
@@ -136,13 +136,48 @@
 
     <div class="message">
 
-      <h2 class="heading2">Name:</h2>
+      <h2>Name: <span id="userName:"></span></h2>
+      <p id="userphone"></p>
+       <div class="single-user">
 
+       </div>
     </div>
 
   </div>
-     
 
-     <script src="./index.js"></script> 
+
+  <script>
+
+
+const whatsapp=document.querySelector(".img")
+const singleuser=document.querySelector(".single-user")
+
+
+whatsapp.addEventListener('click',function(){
+   
+   singleuser.innerHTML=this.innerHTML;
+  // console.log ( typeof whatsapp)
+  
+})
+    
+
+
+
+
+
+  // function showDetails(name,phone) {
+  //   document.querySelector('userName').textContent=name;
+  //   document.querySelector('userphone').textContent="phone Number: " +phone;
+  // }
+
+
+  </script>
+
+
+
+
+
+   
+     <!-- <script src="./index.js"></script>  -->
   </body>
 </html>

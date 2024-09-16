@@ -1,7 +1,7 @@
-const whatsapp = document.querySelector(".img");
+const whatsapp = document.querySelector("h3");
 
 whatsapp.addEventListener("click", function () {
-  heading2.innerText = "allah";
+  selector.innerText = "allah";
 });
 
 // const produc = document.querySelector("h3");
