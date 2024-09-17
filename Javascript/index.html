@@ -51,22 +51,51 @@
   </head>
 
   <body>
-    <h1>javascript Number</h1>
+    <h1>javascript Arrays</h1>
 
     <p id="demo"></p>
 
     <script>
-      let x = 12;
-      let y = 4;
-      let Z = 10;
+      const cars = ["Saab", "Volvo", "BMW"];
 
-      // let resul = x + y + Z;
-      const Number = document.querySelector("#demo");
+      const carsName = document.querySelector("#demo");
       const heading1 = document.querySelector("h1");
 
-      let number1 = x.toString();
+      heading1.addEventListener("click", function () {
+        carsName.innerHTML = cars;
+      });
 
-      Number.innerText = typeof number1;
+      // carsName.innerHTML = cars;
+      // console.log(cars);
+
+      // const persont = {
+      //   firstName: "Rony",
+      //   lastName: "mia",
+      //   age: 50,
+      // };
+
+      // const person = document.querySelector("#demo");
+      // const heading1 = document.querySelector("h1");
+
+      // heading1.addEventListener("click", function () {
+      //   person.innerHTML = JSON.stringify(persont);
+      // });
+
+      // person.innerText = JSON.stringify(persont);
+
+      // console.log(persont);
+
+      // let x = 12;
+      // let y = 4;
+      // let Z = 10;
+
+      // let resul = x + y + Z;
+      // const Number = document.querySelector("#demo");
+      // const heading1 = document.querySelector("h1");
+
+      // let number1 = x.toString();
+
+      // Number.innerText = typeof number1;
 
       // Number.innerHTML = x + "<br>" + y + "<br>" + Z;
 
