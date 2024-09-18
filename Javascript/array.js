@@ -72,3 +72,5 @@ console.log(text);
 // let newarray = myarray.flat();
 
 // console.log(newarray);
+
+// https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/

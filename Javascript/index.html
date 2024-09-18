@@ -15,8 +15,7 @@
       src="https://script.4dex.io/localstore.js"
     ></script>
     <style>
-      /* 
-.img {
+      .img {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -35,216 +34,120 @@
         overflow: scroll;
       }
 
-      .main_menu{
+      .main_menu {
         display: flex;
       }
 
-     .message{
-       
-       border: 1px solid red;
+      .message {
+        border: 1px solid red;
 
-       height: 580px;
-       width: 400px;
-       overflow: scroll;
-     } */
+        height: 580px;
+        width: 400px;
+        overflow: scroll;
+      }
     </style>
   </head>
 
   <body>
-    <h1>javascript Arrays</h1>
+    <div class="main_menu">
+      <div class="chat_list">
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-    <p id="demo"></p>
+          <div class="img_con">
+            <h3>Abu Taher kaka</h3>
+            <p>assalamu alaikum</p>
+          </div>
+        </div>
 
-    <script>
-      const cars = ["Saab", "Volvo", "BMW"];
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-      const carsName = document.querySelector("#demo");
-      const heading1 = document.querySelector("h1");
+          <div class="img_con">
+            <h3>Md.Nurul Islam</h3>
+            <p>assalamu alaikum</p>
+          </div>
+        </div>
 
-      heading1.addEventListener("click", function () {
-        carsName.innerHTML = cars;
-      });
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-      // carsName.innerHTML = cars;
-      // console.log(cars);
+          <div class="img_con">
+            <h3>Md.Rony Mia</h3>
+            <p>assalamu alaikum</p>
+          </div>
+        </div>
 
-      // const persont = {
-      //   firstName: "Rony",
-      //   lastName: "mia",
-      //   age: 50,
-      // };
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-      // const person = document.querySelector("#demo");
-      // const heading1 = document.querySelector("h1");
+          <div class="img_con">
+            <h3>Md.Asraful</h3>
+            <p>assalamu alaikum</p>
+          </div>
+        </div>
 
-      // heading1.addEventListener("click", function () {
-      //   person.innerHTML = JSON.stringify(persont);
-      // });
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-      // person.innerText = JSON.stringify(persont);
+          <div class="img_con">
+            <h3>Md.Akramul</h3>
+            <p>assalamu alaikum</p>
+          </div>
+        </div>
 
-      // console.log(persont);
+        <div class="img">
+          <img
+            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
+            alt=""
+          />
 
-      // let x = 12;
-      // let y = 4;
-      // let Z = 10;
-
-      // let resul = x + y + Z;
-      // const Number = document.querySelector("#demo");
-      // const heading1 = document.querySelector("h1");
-
-      // let number1 = x.toString();
-
-      // Number.innerText = typeof number1;
-
-      // Number.innerHTML = x + "<br>" + y + "<br>" + Z;
-
-      // heading1.addEventListener("click", function () {
-      //   Number.innerText = resul;
-      // });
-
-      // Number.innerText = resul;
-
-      // console.log(resul);
-
-      // let text1 = "sea";
-      // let text2 = "food";
-      // let text3 = "apple";
-
-      // let result = text1.concat("  ", text3, " ", text2);
-      // const name = document.querySelector("#demo");
-      // const heading2 = document.querySelector("h1");
-
-      // heading2.addEventListener("click", function () {
-      //   name.innerHTML = result;
-      // });
-      // console.log(result);
-
-      // name.innerText = result;
-
-      // const text = "Al-Amin";
-      // const name = document.querySelector("#demo");
-
-      // name.innerHTML = text;
-    </script>
-
-    <!-- <div class="main_menu">
-     <div class="chat_list">
-      <div class="img">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con">
-          <h3>Abu Taher kaka</h3>
-          <p>assalamu alaikum</p>
+          <div class="img_con">
+            <h3>Md.Jabet</h3>
+            <p>assalamu alaikum</p>
+          </div>
         </div>
       </div>
 
-      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con">
-          <h3>Md.Nurul Islam</h3>
-          <p>assalamu alaikum</p>
-        </div>
+      <div class="message">
+        <h2>
+          Name:
+          <p class="paragraph"></p>
+        </h2>
       </div>
-
-      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con">
-          <h3>Md.Rony Mia</h3>
-          <p>assalamu alaikum</p>
-        </div>
-      </div>
-
-      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con">
-          <h3>Md.Asraful</h3>
-          <p>assalamu alaikum</p>
-        </div>
-      </div>
-
-      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con">
-          <h3>Md.Akramul</h3>
-          <p>assalamu alaikum</p>
-        </div>
-      </div>
-
-      <div class="img" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-        <img
-          src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-          alt=""
-        />
-
-        <div class="img_con" onclick="showDetails('abu taher kaka','017xxxxxxx')">
-          <h3>Md.Jabet</h3>
-          <p>assalamu alaikum</p>
-        </div>
-      </div>
-
-
-      
-    </div> 
-
-
-    <div class="message">
-
-      <h2>Name: <span id="userName:"></span></h2>
-      <p id="userphone"></p>
-       <div class="single-user">
-
-       </div>
     </div>
 
-  </div>
+    <script>
+      const paragraph = document.querySelector(".paragraph");
+      const chat_list = document.querySelector(".img");
 
+      chat_list.addEventListener("click", function () {
+        paragraph.innerHTML = chat_list.innerHTML;
+      });
 
-  <script>
+      let name = "rakib";
+      let colour = "black";
+      result = name + colour;
+      console.log(name.concat(colour));
+      console.log(result);
 
-
-const whatsapp=document.querySelector(".img")
-const singleuser=document.querySelector(".single-user")
-
-
-whatsapp.addEventListener('click',function(){
-   
-   singleuser.innerHTML=this.innerHTML;
-  // console.log ( typeof whatsapp)
-  
-})
-    
-
-
-
-
-
-  // function showDetails(name,phone) {
-  //   document.querySelector('userName').textContent=name;
-  //   document.querySelector('userphone').textContent="phone Number: " +phone;
-  // }
-
-
-  </script> -->
+      // paragraph.innerText = chat_list.innerText;
+    </script>
 
     <!-- <script src="./index.js"></script>  -->
   </body>

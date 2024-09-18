@@ -115,3 +115,10 @@ console.log(person.name)
 // });
 
 // console.log(produc);
+
+
+
+
+  let x =23;
+
+
