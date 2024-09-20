@@ -58,7 +58,16 @@
 
 // console.log(resust1)
 
-let text = "Rakib";
+let text = "345";
 
 result = text.repeat(5);
-console.log(result);
+console.log(typeof Number(text));
+
+const quantity = "12.99";
+console.log(parseInt(quantity, 10));
+
+console.log(typeof parseFloat(quantity));
+
+let text1 = 4578;
+// result = toString(name);
+console.log(typeof toString(text1));
