@@ -125,8 +125,24 @@ person.roll = 36;
 
 // console.log(result);
 
-let Boolean = true;
+// let Boolean = true;
 
-num = Number(Boolean);
+// num = Number(Boolean);
 
-console.log(num);
+// console.log(num);
+
+// result = Boolean * 3;
+// console.log(result);
+
+let talent = true;
+
+resultt = String(talent);
+console.log(typeof resultt);
+
+// let iphone = `${talent}`;
+
+// console.log(typeof iphone);
+
+// result = talent.toString();
+
+// console.log(typeof result);
