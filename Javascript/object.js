@@ -134,10 +134,22 @@ person.roll = 36;
 // result = Boolean * 3;
 // console.log(result);
 
-let talent = true;
+// let talent = 0;
 
-resultt = String(talent);
-console.log(typeof resultt);
+// resultt = Boolean(talent);
+// console.log(resultt);
+
+// const data = new Date("2022-03-25");
+
+// console.log(data);
+
+// const car = {
+//   type: "Toyota",
+//   model: "Corolla",
+//   year: 2009,
+// };
+
+// console.log(car);
 
 // let iphone = `${talent}`;
 
@@ -146,3 +158,51 @@ console.log(typeof resultt);
 // result = talent.toString();
 
 // console.log(typeof result);
+
+//   object to String
+
+const obj = {
+  name: "Rony",
+  age: 30,
+};
+
+// result = JSON.stringify(obj);
+
+// console.log(result);
+
+// result2 = obj.toString();
+
+// console.log(result2);
+
+// const car = {
+//   type: "Toyota",
+//   model: "Corolla",
+//   year: 2009,
+//   toString: function () {
+//     return `${this.type} ${this.model} ${this.year}`;
+//   },
+// };
+
+// console.log(car.toString());
+
+// const cart = {
+//   type: "toyata",
+//   model: "Corolla",
+//   year: 2009,
+// };
+
+// console.log(`${cart}`);
+
+const Car = {
+  type: "corolla",
+  model: "xmmm",
+  year: 2009,
+};
+
+const keys = Object.keys(Car);
+
+console.log(keys);
+
+const valus = Object.values(Car);
+
+console.log(valus);
