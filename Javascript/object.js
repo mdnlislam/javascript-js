@@ -12,13 +12,13 @@
 // argoment
 // parameter
 
-const person = { firstName: "John", lastName: "Doe", name: "" };
+// const person = { firstName: "John", lastName: "Doe", name: "" };
 
 // console.log(Object.keys(person))
 // console.log(Object.values(person))
 // console.log(Object.entries(person))
 
-person.roll = 36;
+// person.roll = 36;
 // console.log(person)
 // const cars =["BMW","volvo","toyta",person]
 // console.log(cars[1],cars[cars.length-1],)
@@ -193,16 +193,62 @@ const obj = {
 
 // console.log(`${cart}`);
 
-const Car = {
-  type: "corolla",
-  model: "xmmm",
-  year: 2009,
+// const Car = {
+//   type: "corolla",
+//   model: "xmmm",
+//   year: 2009,
+// };
+
+// const keys = Object.keys(Car);
+
+// console.log(keys);
+
+// const valus = Object.values(Car);
+
+// console.log(valus);
+
+let person = {
+  name: "john",
+  age: 30,
+  city: "New York",
 };
 
-const keys = Object.keys(Car);
+reult = Object.keys(person);
 
-console.log(keys);
+result = Object.values(person);
 
-const valus = Object.values(Car);
+console.log(result);
 
-console.log(valus);
+console.log(reult);
+
+// for (let key in person) {
+//   delete person[key];
+// }
+
+// console.log(person);
+
+// let keysToDelete = ["age", "city"];
+
+// for (let keys of keysToDelete) {
+//   delete person[keys];
+// }
+
+// delete person.name;
+
+// delete person.city;
+
+// console.log(person);
+
+// person.name = "rony";
+
+// person.country = "USA";
+
+// person.age = 35;
+
+// person["city"] = "Dhaka";
+
+// console.log(person);
+
+// console.log(person);
+
+// console.log(person["city"]);
