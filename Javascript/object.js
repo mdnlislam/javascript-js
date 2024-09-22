@@ -207,19 +207,19 @@ const obj = {
 
 // console.log(valus);
 
-let person = {
-  name: "john",
-  age: 30,
-  city: "New York",
-};
+// let person = {
+//   name: "john",
+//   age: 30,
+//   city: "New York",
+// };
 
-reult = Object.keys(person);
+// reult = Object.keys(person);
 
-result = Object.values(person);
+// result = Object.values(person);
 
-console.log(result);
+// console.log(result);
 
-console.log(reult);
+// console.log(reult);
 
 // for (let key in person) {
 //   delete person[key];
@@ -252,3 +252,26 @@ console.log(reult);
 // console.log(person);
 
 // console.log(person["city"]);
+
+// const inputstring = "helloiamfrome234556734mtbtdjhdck";
+
+// const lines = inputstring.split(`\n`);
+
+// const firstline = lines[0];
+
+// const lastline = lines[lines.length - 1];
+
+// const result = `${firstline}\n${lastline}`;
+
+// // lasttext = text.slice(-1, 5);
+
+// console.log(result);
+// console.log(lasttext);
+
+const inputstring =
+  "k-proj-fjsarieowjskamcwr498329483957329483958349fcdfklj034u3";
+
+const inputstringt =
+  inputstring.slice(0, 10) + `************` + inputstring.slice(-10);
+
+console.log(inputstringt);
