@@ -161,10 +161,10 @@
 
 //   object to String
 
-const obj = {
-  name: "Rony",
-  age: 30,
-};
+// const obj = {
+//   name: "Rony",
+//   age: 30,
+// };
 
 // result = JSON.stringify(obj);
 
@@ -268,10 +268,89 @@ const obj = {
 // console.log(result);
 // console.log(lasttext);
 
-const inputstring =
-  "k-proj-fjsarieowjskamcwr498329483957329483958349fcdfklj034u3";
+// const inputstring =
+//   "k-proj-fjsarieowjskamcwr498329483957329483958349fcdfklj034u3";
 
-const inputstringt =
-  inputstring.slice(0, 10) + `************` + inputstring.slice(-10);
+// const inputstringt =
+//   inputstring.slice(0, 10) + `************` + inputstring.slice(-10);
 
-console.log(inputstringt);
+// console.log(inputstringt);
+
+// const foods = ["Banana", "Orange", "Apple", "Mango"];
+
+// let result = Array.isArray(foods);
+
+// console.log(typeof result);
+
+// let arr = [1, 2, 3];
+
+// result = Array.isArray(arr);
+
+// console.log(result);
+
+// let notarr = { a: 1, b: 3 };
+
+// result = Array.isArray(notarr);
+
+// console.log(result);
+
+// let arr = [1, 2, 3];
+
+// result = arr instanceof Array;
+
+// console.log(result);
+
+// let notarr = { a: 1, b: 3 };
+
+// result = notarr instanceof Array;
+
+// console.log(result);
+
+// let arr = [1, 2, 3];
+
+// result = Object.prototype.toString.call(arr) === "[object Array]";
+
+// console.log(result);
+
+// let notarr = { a: 1, b: 3 };
+
+// result = Object.prototype.toString.call(notarr) === "[object Array]";
+
+// console.log(result);
+
+// let peopleArray = [{ name: "rahim", age: 30, profession: "teacher" }];
+
+// // console.log(peopleArray);
+
+// peopleArray.push({ name: "rakib" });
+// console.log(peopleArray);
+
+// let peopleArray = [{ name: "rahim", age: 30, profession: "teacher" }];
+
+// let newpeople = [
+//   { name: "rony", age: 32, profession: "eng." },
+//   { name: "misho", age: 35, profession: "doctor" },
+// ];
+
+// // peopleArray = [...peopleArray, ...newpeople];
+// // peopleArray = peopleArray.concat(newpeople);
+
+// // console.log(peopleArray);
+
+// peopleArray.unshift({ name: "rakib" });
+
+// console.log(peopleArray);
+
+let peopleArray = [];
+
+for (let i = 0; i < 4; i++) {
+  let person = {
+    name: `Person ${i + 1}`,
+    age: 20 + i,
+    profession: "Student",
+  };
+
+  peopleArray.push(person);
+}
+
+console.log(peopleArray);
