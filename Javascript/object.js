@@ -341,16 +341,58 @@
 
 // console.log(peopleArray);
 
-let peopleArray = [];
+// let peopleArray = [];
 
-for (let i = 0; i < 4; i++) {
-  let person = {
-    name: `Person ${i + 1}`,
-    age: 20 + i,
-    profession: "Student",
-  };
+// for (let i = 0; i < 4; i++) {
+//   let person = {
+//     name: `Person ${i + 1}`,
+//     age: 20 + i,
+//     profession: "Student",
+//   };
 
-  peopleArray.push(person);
-}
+// let peopleArray = [];
 
-console.log(peopleArray);
+// for (let i = 0; i < 10; i++) {
+//   let person = {
+//     name: "person",
+//     age: 21,
+//     profession: "Student",
+//   };
+//   peopleArray.push(person);
+// }
+
+// // peopleArray.push(person);
+
+// console.log(peopleArray);
+
+//   peopleArray.push(person);
+// }
+
+// console.log(peopleArray);
+
+// let product = ["bmw", "corollah", "honda"];
+
+// let foods = ["banana", "Apple", "orenge"];
+
+// // result = product.concat(foods);
+// // result = [...product, ...foods];
+
+// product.unshift("sozoki");
+
+// console.log(product);
+
+// let product = [];
+
+// for (let i = 0; i < 5; i++) {
+//   let person = {
+//     name: "rony",
+//     age: 32,
+//     colour: "black",
+//   };
+//   product.push(person);
+//   // removedperson = person.shift();
+// }
+// let removedperson = product.pop();
+
+// console.log(removedperson);
+// console.log(product);
