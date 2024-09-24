@@ -381,18 +381,22 @@
 
 // console.log(product);
 
-// let product = [];
+let product = [];
 
-// for (let i = 0; i < 5; i++) {
-//   let person = {
-//     name: "rony",
-//     age: 32,
-//     colour: "black",
-//   };
-//   product.push(person);
-//   // removedperson = person.shift();
-// }
+for (let i = 0; i < 5; i++) {
+  let person = {
+    name: "rony",
+    age: 32,
+    colour: "black",
+  };
+  product.push(person);
+  // removedperson = person.shift();
+}
 // let removedperson = product.pop();
 
+// delete product[2];
+
+product.splice(1);
+
 // console.log(removedperson);
-// console.log(product);
+console.log(product);
