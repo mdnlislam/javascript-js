@@ -139,18 +139,29 @@
     </div>
 
     <script>
-      const cars = ["BMW", "Vlvo", "Saab", "Ford"];
-
-      let len = cars.length;
+      let i = 0;
       let text = "";
-
-      for (i = 0; i < len; i++) {
-        text += cars[i] + "<br>";
-      }
+      do {
+        text += i + "<br>";
+        i++;
+      } while (i < 10);
 
       result = document.querySelector("#demo");
 
       result.innerHTML = text;
+
+      // const cars = ["BMW", "Vlvo", "Saab", "Ford"];
+
+      // let len = cars.length;
+      // let text = "";
+
+      // for (i = 0; i < len; i++) {
+      //   text += cars[i] + "<br>";
+      // }
+
+      // result = document.querySelector("#demo");
+
+      // result.innerHTML = text;
 
       // const paragraph = document.querySelector(".paragraph");
       // const chat_list = document.querySelector(".img");

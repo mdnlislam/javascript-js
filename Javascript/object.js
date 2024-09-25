@@ -409,7 +409,29 @@
 // // result.push(text);
 // console.log(result);
 
-for (i = 2; i < 4; i++) {
-  const cars = ["BMW", "VOLVO", "SAAB", "FORD"];
-  console.log(cars);
-}
+// for (i = 2; i < 4; i++) {
+//   const cars = ["BMW", "VOLVO", "SAAB", "FORD"];
+//   console.log(cars);
+// }
+
+// let i = 0;
+
+// while (i < 5) {
+//   console.log("the number" + i);
+//   i++;
+// }
+
+// let i = 0;
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 5);
+
+const number = [1, 2, 3, 4, 5];
+
+const doubled = number.map(function (number) {
+  return number * 2;
+});
+
+console.log(doubled);
