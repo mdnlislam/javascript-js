@@ -381,22 +381,35 @@
 
 // console.log(product);
 
-let product = [];
+// let product = [];
 
-for (let i = 0; i < 5; i++) {
-  let person = {
-    name: "rony",
-    age: 32,
-    colour: "black",
-  };
-  product.push(person);
-  // removedperson = person.shift();
-}
-// let removedperson = product.pop();
+// for (let i = 0; i < 5; i++) {
+//   let person = {
+//     name: "rony",
+//     age: 32,
+//     colour: "black",
+//   };
+//   product.push(person);
+//   // removedperson = person.shift();
+// }
+// // let removedperson = product.pop();
 
-// delete product[2];
+// // delete product[2];
 
-product.splice(1);
+// product.splice(1);
 
 // console.log(removedperson);
-console.log(product);
+// console.log(product);
+// let result = [];
+// for (i = 0; i < 5; i++) {
+//   let text = "rakib";
+//   // console.log(text);
+//   result.push(text);
+// }
+// // result.push(text);
+// console.log(result);
+
+for (i = 2; i < 4; i++) {
+  const cars = ["BMW", "VOLVO", "SAAB", "FORD"];
+  console.log(cars);
+}

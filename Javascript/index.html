@@ -132,13 +132,32 @@
       </div>
     </div>
 
-    <script>
-      const paragraph = document.querySelector(".paragraph");
-      const chat_list = document.querySelector(".img");
+    <div>
+      <h1>javascript for loop</h1>
 
-      chat_list.addEventListener("click", function () {
-        paragraph.innerHTML = chat_list.innerHTML;
-      });
+      <p id="demo"></p>
+    </div>
+
+    <script>
+      const cars = ["BMW", "Vlvo", "Saab", "Ford"];
+
+      let len = cars.length;
+      let text = "";
+
+      for (i = 0; i < len; i++) {
+        text += cars[i] + "<br>";
+      }
+
+      result = document.querySelector("#demo");
+
+      result.innerHTML = text;
+
+      // const paragraph = document.querySelector(".paragraph");
+      // const chat_list = document.querySelector(".img");
+
+      // chat_list.addEventListener("click", function () {
+      //   paragraph.innerHTML = chat_list.innerHTML;
+      // });
 
       // let name = "rakib";
       // let colour = "black";
@@ -149,10 +168,6 @@
       // console.log(`${name},${colour}`);
 
       // paragraph.innerText = chat_list.innerText;
-
-      let text = "helloiamfrome234556734mtbtdjhdck";
-
-      fasttext = text.slice(0, 5);
     </script>
 
     <!-- <script src="./index.js"></script>  -->
