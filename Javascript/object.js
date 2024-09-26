@@ -428,10 +428,63 @@
 //   i++;
 // } while (i < 5);
 
-const number = [1, 2, 3, 4, 5];
+// const number = [1, 2, 3, 4, 5];
 
-const doubled = number.map(function (number) {
-  return number * 2;
-});
+// const doubled = number.map(function (number) {
+//   return number * 2;
+// });
 
-console.log(doubled);
+// const result = number.map(Math.sqrt);
+
+// const result = number.map(function (number) {
+//   return number / 2;
+// });
+
+// console.log(result);
+
+// const fruits = ["apple", "orange", "cherry"];
+
+// let result = "";
+
+// fruits.forEach(myfunction);
+
+// function myfunction(item) {
+//   result += item + "";
+// }
+// console.log(result);
+
+// const number = [65, 44, 12, 4];
+
+// let result = "";
+
+// number.forEach(myfunction);
+
+// function myfunction(item, index, arr) {
+//   result += item + "" * "" + 2 + "<br>" + index + arr;
+// }
+
+// console.log(result);
+
+// const person = { fname: "john", lname: "doe", age: "25" };
+
+// for (let key in person) {
+//   console.log(key + ":" + person[key]);
+// }
+
+const numbers = [10, 20, 30, 40];
+
+for (let number of numbers) {
+  console.log(number);
+}
+
+const text = "text";
+
+for (let char of text) {
+  console.log(char);
+}
+
+const fruits = new Set(["apple", "banana", "mango"]);
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
