@@ -139,16 +139,37 @@
     </div>
 
     <script>
-      let i = 0;
-      let text = "";
-      do {
-        text += i + "<br>";
-        i++;
-      } while (i < 10);
-
+      let marks = prompt("Enter you marks: ");
       result = document.querySelector("#demo");
 
-      result.innerHTML = text;
+      if (marks >= 80) result.innerHTML = "A+";
+      else if (marks >= 70) result.innerHTML = "B+";
+      else if (marks >= 60) result.innerHTML = "C+";
+      else if (marks >= 50) result.innerHTML = "D+";
+      else result.innerHTML = "F+";
+      //  const time =new Date () .getHours();
+
+      //  let greeting;
+
+      //  if (time<10){
+      //   greeting="good morning";
+      //  } else if(time<20){
+      //   greeting="good day";
+      //  } else{
+      //   greeting ="good evening";
+
+      //  }
+
+      // let i = 0;
+      // let text = "";
+      // do {
+      //   text += i + "<br>";
+      //   i++;
+      // } while (i < 10);
+
+      // result = document.querySelector("#demo");
+
+      // result.innerHTML = text;
 
       // const cars = ["BMW", "Vlvo", "Saab", "Ford"];
 

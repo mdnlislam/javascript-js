@@ -471,20 +471,20 @@
 //   console.log(key + ":" + person[key]);
 // }
 
-const numbers = [10, 20, 30, 40];
+// const numbers = [10, 20, 30, 40];
 
-for (let number of numbers) {
-  console.log(number);
-}
+// for (let number of numbers) {
+//   console.log(number);
+// }
 
-const text = "text";
+// const text = "text";
 
-for (let char of text) {
-  console.log(char);
-}
+// for (let char of text) {
+//   console.log(char);
+// }
 
-const fruits = new Set(["apple", "banana", "mango"]);
+// const fruits = new Set(["apple", "banana", "mango"]);
 
-for (let fruit of fruits) {
-  console.log(fruit);
-}
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
