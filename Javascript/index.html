@@ -139,14 +139,27 @@
     </div>
 
     <script>
-      let marks = prompt("Enter you marks: ");
+      // let marks = prompt("Enter you marks: ");
+
+      // if (marks >= 80) result.innerHTML = "A+";
+      // else if (marks >= 70) result.innerHTML = "B+";
+      // else if (marks >= 60) result.innerHTML = "C+";
+      // else if (marks >= 50) result.innerHTML = "D+";
+      // else result.innerHTML = "F+";
+
+      const hour = new Date().getHours();
       result = document.querySelector("#demo");
 
-      if (marks >= 80) result.innerHTML = "A+";
-      else if (marks >= 70) result.innerHTML = "B+";
-      else if (marks >= 60) result.innerHTML = "C+";
-      else if (marks >= 50) result.innerHTML = "D+";
-      else result.innerHTML = "F+";
+      let greeting;
+
+      if (hour < 18) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+
+      result.innerHTML = greeting;
+
       //  const time =new Date () .getHours();
 
       //  let greeting;
