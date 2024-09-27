@@ -31,6 +31,7 @@
     1. how to identify array
     2. data add,add data start of array,add data end of array,delete data start of array,delete dada end  of array
     3. data update ,delete
+    4. find mathode
 
 ## Condition
 
@@ -50,6 +51,7 @@
     5. forEach
     6. for in
     7. for of
+    8. for loop decrement
 
 ## Others
 
@@ -57,3 +59,9 @@
     2. Array reduce
     3. date Function
     4. math function
+
+## Conditional Operator
+
+    1.and  &&
+    2.or   ||
+    3.not  !

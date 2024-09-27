@@ -139,7 +139,88 @@
     </div>
 
     <script>
+      let marks = prompt("Enter you marks: ");
+      result = document.querySelector("#demo");
+      // -1 theke boro hote hobe and 50 theke soto hote hole "F+"
+      if (marks <= 49 && marks >= 0) {
+        result.innerHTML = "f";
+        return;
+      }
+
+      // 49 theke boro hote hobe and 60 theke soto hote hole "C+"
+      if (marks <= 59 && marks >= 50) {
+        result.innerHTML = "D+";
+        return;
+      }
+      // 59 theke boro hote hobe and 70 theke soto hote hole "C+"
+      if (marks <= 69 && marks >= 60) {
+        result.innerHTML = "C+";
+        return;
+      }
+      // 69 theke boro hote hobe and 80 theke soto hote hole "B+"
+      if (marks <= 79 && marks >= 70) {
+        result.innerHTML = "B+";
+        return;
+      }
+      // 79 theke boro hote hobe and 101 theke soto hote hole "A+"
+      if (marks <= 100 && marks >= 80) {
+        result.innerHTML = "A+";
+        return;
+      }
+      console.log(result.innerHTML);
+      result.innerHTML = "invalid value";
+      console.log(result.innerHTML);
+
+      /* let marks = prompt("Enter you marks: ");
+      result = document.querySelector("#demo");
+      // -1 theke boro hote hobe and 50 theke soto hote hole "F+"
+      if (marks <= 49 && marks >= 0) {
+        result.innerHTML = "f";
+      }
+      // 49 theke boro hote hobe and 60 theke soto hote hole "C+"
+      else if (marks <= 59 && marks >= 50) {
+        result.innerHTML = "D+";
+      }
+      // 59 theke boro hote hobe and 70 theke soto hote hole "C+"
+      else if (marks <= 69 && marks >= 60) {
+        result.innerHTML = "C+";
+      }
+      // 69 theke boro hote hobe and 80 theke soto hote hole "B+"
+      else if (marks <= 79 && marks >= 70) {
+        result.innerHTML = "B+";
+      }
+      // 79 theke boro hote hobe and 101 theke soto hote hole "A+"
+      else if (marks <= 100 && marks >= 80) {
+        result.innerHTML = "A+";
+      } else {
+        result.innerHTML = "invalid value";
+      }*/
+
       // let marks = prompt("Enter you marks: ");
+      // result = document.querySelector("#demo");
+      // // -1 theke boro hote hobe and 50 theke soto hote hole "F+"
+      // if (marks < 50 && marks > -1) result.innerHTML = "f";
+      // // 49 theke boro hote hobe and 60 theke soto hote hole "C+"
+      // else if (marks < 60 && marks > 49) result.innerHTML = "D+";
+      // // 59 theke boro hote hobe and 70 theke soto hote hole "C+"
+      // else if (marks < 70 && marks > 59) result.innerHTML = "C+";
+      // // 69 theke boro hote hobe and 80 theke soto hote hole "B+"
+      // else if (marks < 80 && marks > 69) result.innerHTML = "B+";
+      // // 79 theke boro hote hobe and 101 theke soto hote hole "A+"
+      // else result.innerHTML = "A+";
+
+      // let marks = prompt("Enter you marks: ");
+      // result = document.querySelector("#demo");
+      // // -1 theke boro hote hobe and 50 theke soto hote hole "F+"
+      // if (marks > -1 && marks < 50) result.innerHTML = "f";
+      // // 49 theke boro hote hobe and 60 theke soto hote hole "C+"
+      // else if (marks > 49 && marks < 60) result.innerHTML = "D+";
+      // // 59 theke boro hote hobe and 70 theke soto hote hole "C+"
+      // else if (marks > 59 && marks < 70) result.innerHTML = "C+";
+      // // 69 theke boro hote hobe and 80 theke soto hote hole "B+"
+      // else if (marks > 69 && marks < 80) result.innerHTML = "B+";
+      // // 79 theke boro hote hobe and 101 theke soto hote hole "A+"
+      // else result.innerHTML = "A+";
 
       // if (marks >= 80) result.innerHTML = "A+";
       // else if (marks >= 70) result.innerHTML = "B+";
@@ -147,18 +228,19 @@
       // else if (marks >= 50) result.innerHTML = "D+";
       // else result.innerHTML = "F+";
 
-      const hour = new Date().getHours();
-      result = document.querySelector("#demo");
+      // const hour = new Date().getHours();
 
-      let greeting;
+      // let greeting;
 
-      if (hour < 18) {
-        greeting = "Good day";
-      } else {
-        greeting = "Good evening";
-      }
+      // if (hour < 10) {
+      //   greeting = "Good Morning";
+      // } else if (hour < 20) {
+      //   greeting = "Good day";
+      // } else {85
+      //   greeting = "Good evening";
+      // }
 
-      result.innerHTML = greeting;
+      // result.innerHTML = greeting;
 
       //  const time =new Date () .getHours();
 
