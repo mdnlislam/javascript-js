@@ -74,3 +74,10 @@ console.log(text);
 // console.log(newarray);
 
 // https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+for (i = cars.length; i > 0; i--) {
+  result = cars[i];
+  console.log(result);
+}

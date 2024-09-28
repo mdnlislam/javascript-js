@@ -488,3 +488,18 @@
 // for (let fruit of fruits) {
 //   console.log(fruit);
 // }
+const model = "xx26";
+
+const product = {
+  name: "i-phone",
+  // model: "xx26",
+  colour: "black",
+};
+let screen = "17px";
+product.colour = "red";
+
+product.screen = screen;
+
+// delete product.model;
+
+console.log(product, screen);
