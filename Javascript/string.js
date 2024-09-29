@@ -31,7 +31,7 @@
 //        let text7 ="Rakib"
 //        let text8="Nahid"
 
-//        console.log(text7.concat(" ",text8))
+//        console.log(text7.concat(" ",text8))  
 
 //         let text9= text7.trim()
 //        console.log(text9.length)
@@ -71,3 +71,21 @@ console.log(typeof parseFloat(quantity));
 let text1 = 4578;
 // result = toString(name);
 console.log(typeof toString(text1));
+
+
+
+ // 1. String
+   // 2. Number
+   // 3. Bigint
+   // 4.boolean
+   // 5. undefined
+   // 6. null
+   // 7. Symbol
+   // 8.Object
+   
+   
+   
+   
+	
+	
+	
