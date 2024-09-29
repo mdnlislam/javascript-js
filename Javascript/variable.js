@@ -18,4 +18,19 @@ let rakibIsAdult = true; // boolean type variable
 
 let product = {}; // object type variable
 
-let list = []; // array  type variable
+let list = [ name1,"rony"]; // array  type variable
+
+
+const person={
+	//name:name1,
+	name:"rakib",
+	roll:roll,
+	list:list,
+};
+
+console.log(person)
+
+let name2=name1;
+
+console.log(name2)
+ 
