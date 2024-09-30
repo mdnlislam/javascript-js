@@ -73,19 +73,57 @@ let text1 = 4578;
 console.log(typeof toString(text1));
 
 
-
- // 1. String
-   // 2. Number
-   // 3. Bigint
-   // 4.boolean
-   // 5. undefined
-   // 6. null
-   // 7. Symbol
-   // 8.Object
-   
-   
-   
-   
+  let x; // variable defined
+  
+ let name ="rakib"; // value assign
+	
+	let A="apple"; // variable define and value assign kora
 	
 	
+	//kind of data type
 	
+	// 1. String
+	// 2.Number
+	// 3.BigInt
+	// 4.boolean
+	// 5.undefined
+	// 6.null
+	// 7.Symbol
+	// 8.Object
+	
+	//kind of Object
+	
+	//1.Object
+	// 2.array Object
+	// data Object
+	const nameList=[]; // array Object
+	
+	
+	let b="beat"; // String
+	
+	let roll=0; // Number
+	
+	let heGood=true; // boolean
+	
+	const product={
+		name:A,
+		List:nameList,
+		
+	};
+	const nameList1=[roll,b,heGood,product]; // array Object
+	
+	   console.log(nameList1[roll],123)
+	
+  	// Object
+	
+   
+	
+	//let name="taher";
+	
+	
+ 	for(let i=0;i<nameList1.length;i++){
+		
+		console.log(nameList1[i])
+		
+		
+	}
