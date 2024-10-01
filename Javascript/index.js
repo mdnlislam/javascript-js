@@ -53,3 +53,14 @@ whatsapp.addEventListener("click", function () {
 // });
 
 // console.log(produc);
+
+
+
+let marks =prompt("Enter your marks: ")
+	if(marks>80){
+		console.log("A+");
+	}
+	else{
+		console.log("fail");
+	};
+

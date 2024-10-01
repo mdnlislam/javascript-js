@@ -18,7 +18,7 @@ let rakibIsAdult = true; // boolean type variable
 
 let product = {}; // object type variable
 
-let list = [ name1,"rony"]; // array  type variable
+let list = [ "apple","rony"]; // array  type variable
 
 
 const person={
@@ -28,9 +28,34 @@ const person={
 	list:list,
 };
 
-console.log(person)
+//console.log(person)
 
 let name2=name1;
 
-console.log(name2)
+//console.log(name2)
  
+ 
+ const person2={
+	//name:name1,
+	name:"taher",
+	roll:246718,
+	list:["apple",true,person],
+};
+
+const persons=[person,person2,person];
+
+ 
+
+  for(let i=0;i<persons.length;i++){
+	  let p=persons[i];
+	 if( p["name"]==="taher") {
+		 
+		 p["name"]="abu taher"
+	  //console.log(p,new Date());
+		 
+	 }
+	  
+	  
+  };
+	  console.log(persons,new Date());
+  
