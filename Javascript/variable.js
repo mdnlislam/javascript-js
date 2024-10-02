@@ -2,7 +2,7 @@
 let name; // ata holo variable define kora
 name = "rakib"; // ata holo value assign kora
 let fatherName = "Abdul alim"; // ata holo variable define kora and value assign kora.
-console.log(name);
+//console.log(name);
 
 //daily work
 /**
@@ -42,20 +42,36 @@ let name2=name1;
 	list:["apple",true,person],
 };
 
-const persons=[person,person2,person];
+const persons=[person,person2];
 
  
-
-  for(let i=0;i<persons.length;i++){
-	  let p=persons[i];
-	 if( p["name"]==="taher") {
+ 
+ 
+ for (let i=0;i<persons.length;i++ ){
+	 let p =persons[0];
+	 if(i===0){
+		p["name"]="rakib mia" 
 		 
-		 p["name"]="abu taher"
+	 };
+	 console.log(persons[i],new Date);
+ };
+ 
+ 
+ 
+ 
+ 
+ 
+
+  //for(let i=0;i<persons.length;i++){
+	//  let p=persons[i];
+	// if( p["name"]==="taher") {
+		 
+		// p["name"]="abu taher"
 	  //console.log(p,new Date());
 		 
-	 }
+//	 }
 	  
 	  
-  };
-	  console.log(persons,new Date());
+ // };
+	 // console.log(persons,new Date());
   
