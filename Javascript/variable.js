@@ -1,6 +1,6 @@
 //let  holo akti keyword ,name holo variable name,semiclon sese  thakbe .
-let name; // ata holo variable define kora
-name = "rakib"; // ata holo value assign kora
+//let name; // ata holo variable define kora
+//name = "rakib"; // ata holo value assign kora
 let fatherName = "Abdul alim"; // ata holo variable define kora and value assign kora.
 //console.log(name);
 
@@ -47,14 +47,14 @@ const persons=[person,person2];
  
  
  
- for (let i=0;i<persons.length;i++ ){
-	 let p =persons[0];
-	 if(i===0){
-		p["name"]="rakib mia" 
-		 
-	 };
-	 console.log(persons[i],new Date);
- };
+    for( let i=0;i<persons.length;i++){
+		let p =persons[i]
+		if(p['name']==="rakib"){
+			p['name']="rakib mia"
+		};
+		
+		console.log(p)
+	};
  
  
  
