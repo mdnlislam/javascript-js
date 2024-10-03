@@ -49,13 +49,13 @@
 // });
 // console.log(filter);
 
-let produc = ["BMW", "RAKIB", "ALAMIN", "AlMON"];
+//let produc = ["BMW", "RAKIB", "ALAMIN", "AlMON"];
 
-let text = "";
-for (let i = 0; i < produc.length; i++) {
-  text += produc[i];
-}
-console.log(text);
+//et text = "";
+//for (let i = 0; i < produc.length; i++) {
+ // text += produc[i];
+// }
+//console.log(text);
 
 // let per = produc.copyWithin(2);
 
@@ -75,9 +75,43 @@ console.log(text);
 
 // https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
 
-const cars = ["BMW", "Volvo", "Saab", "Ford"];
+//onst cars = ["BMW", "Volvo", "Saab", "Ford"];
 
-for (i = cars.length; i > 0; i--) {
-  result = cars[i];
-  console.log(result);
-}
+//for (i = cars.length; i > 0; i--) {
+ // result = cars[i];
+    // console.log(result);
+// }
+
+
+// array filter
+
+
+const numbers=[5,8,10,15,77,150];
+const product=["BMW","sojoki","honda"];
+
+
+const filterNumber=product.filter(function(name){
+	//if(number>10 || number<8 ){
+	return  name== "BMW"
+		
+	// }
+	
+	
+});
+
+
+console.log( filterNumber)
+  
+
+
+const findNumber=product.find(function(name){
+	//if(number>10 || number<8 ){
+	return  name== "BMW"
+		
+	// }
+	
+	
+});
+
+console.log(findNumber)
+
