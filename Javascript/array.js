@@ -86,32 +86,94 @@
 // array filter
 
 
-const numbers=[5,8,10,15,77,150];
-const product=["BMW","sojoki","honda"];
+//const numbers=[5,8,10,15,77,150];
+//const product=["BMW","sojoki","honda"];
 
 
-const filterNumber=product.filter(function(name){
+//const filterNumber=product.filter(function(name){
 	//if(number>10 || number<8 ){
-	return  name== "BMW"
+	//return  name== "BMW"
 		
 	// }
 	
 	
-});
+// });
 
 
-console.log( filterNumber)
+//console.log( filterNumber)
   
 
 
-const findNumber=product.find(function(name){
+//const findNumber=product.find(function(name){
 	//if(number>10 || number<8 ){
-	return  name== "BMW"
+	//return  name== "BMW"
 		
 	// }
 	
 	
-});
+// });
 
-console.log(findNumber)
+//console.log(findNumber)
+
+
+
+
+
+
+  const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
+  
+  
+  
+     const filterNumber= numbers.filter(function(number){
+		    // if(number==="A+" ||number==="B+" || number==="C+"||number==="C-"||number==="D+"  ){
+	  	          // return true
+			// } 
+				  
+			if(number !== "F")  {
+				return true
+			}
+			
+			//  if(number === "C+")  {
+			//	return true
+			// }
+			// if(number === "C-")  {
+			//	return true
+			// }
+		//	if(number === "D")  {
+			//	return true
+			// }
+			
+			//if(number === "F")  {
+				// return true
+			//}
+		 
+		 
+	 });
+  
+  
+       console.log(filterNumber)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
