@@ -122,9 +122,49 @@
 
   const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
   
+   const newResults=[];
+   
+   
+   
+              for(let number of numbers){
+				//console.log(number);
+				 if(number !== "F")  {
+					//newResults.push(number)
+					if(number==="c+" ){
+						newResults.push("c-")
+						
+					} else{
+						newResults.push(number)
+					}
+				}
+				
+			  };
+				   console.log(newResults,"new");
+  
+   
+   
+   
+   
+   
+   
+   
+   
+              // for(let i=0;i<numbers.length;i++){
+				//   newResults.push(numbers[i])
+//let number=numbers[i];
+				
+			//	if(number === "F")  {
+			//	newResults.push(number)
+		//	}
+				
+				//console.log(number,"for");
+			 //  };
+				  // console.log(newResults,"new");
   
   
      const filterNumber= numbers.filter(function(number){
+		// console.log(number,"filter");
+		 
 		    // if(number==="A+" ||number==="B+" || number==="C+"||number==="C-"||number==="D+"  ){
 	  	          // return true
 			// } 
@@ -151,8 +191,7 @@
 	 });
   
   
-       console.log(filterNumber)
-
+      // console.log(filterNumber)
 
 
 
