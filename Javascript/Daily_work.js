@@ -1,73 +1,160 @@
-     
+
+// daily work
+
+//  let A ; // variable difind
+  
+   //   A="apple"; // value assign 
+	  
+ // let A="apple"; // variable difind and value assign
+  
+    
+	// kind of data type
 	 
-	  //daily work
+	 
+	  // 1. String
+	  // 2. Number
+	  // 3.BigInt
+	  // 4.boolean
+	  // 5. null
+	  // 6. undefined
+	  // 7. Symbol
+	  // 8.Object
+	  
+	  // kind of Object
+	  // 1. Object
+	  // 2. array Object
 	  
 	  
-	 // let z ;  // variable difind kora
 	  
-	   // y='z'; // valeu assing kora
-		
-		// let name= "rakib"; // variable difind and valeu assing
-		
-		
-		
-		// kind of data type javascript
-		
-		// 1. string
-		// 2. number
-		// 3. bigint
-		// 4. boolean
-		// 5. null
-		// 6.undefind
-		// 7.symbol
-		// 8.object
-		
-		// kild of ofject
-		
-		// 1.object
-		// 2.array object
-		// 3.data object
-		
-		
-		// let b ="belt"; // string
-		// let roll=246718; //number
-		// let goodBoy=true; // boolean
-		// let product={}; // object
-		// let list=[]; // array object
+	  // let B="belt";  String
+	  
+	  // let roll =246718;  Number
+	  
+	  // let goodboy=true;  boolean
+	  
+	  // const product={};   Object
+	  // const  list =[];  array Object
+	  
+	  
+	  
+	  const numbers =["A+" , "B+","C+","C-","D+","D-","D","F","C","F","A-","F"];
+	  
+	       const result=[];
+	  
+	  
+	        for(let number of numbers){
+				
+				
+				if(number !=="F"){
+					
+					//result.push(number);
+				};
+				
+				if(number==="A+"){
+					
+					result.push("A-")
+				}
+				else{
+					result.push(number);
+					
+				}
+				
+				
+				
+			};
+	  
+	             console.log(result)
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   // for (let i=0;i<numbers.length;i++){
+			
+		//	let number=numbers[i];
+			
+			//  if(number !=="F"){
+				  
+				// result.push(number) ;
+			//  };
+			
+		//	if(number==="A+"){
+			//	result.push("A-");
+		//	} else{
+			//	result.push(number) ;
+		//	}
+			
+		// };
+	  
+	  
+	     //  console.log(result);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	 // const greatPoint=numbers.filter(function(number){
+		  
+		  
+		//  if(number=="A+" || number==="D+" || number==="C" || number==="B+"){
+			  
+			//  return true
+		//  };
+		  
+		  
+		  
+		  
+		   // if(number!=="F"){
+				
+			//	return true
+		//	};
+	 
+		  
+		  
+		  
+	 // });
+	  
+	     //  console.log(greatPoint)
 	 
 	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	let myfunction = function (a,b,c){
-		 
-		 return a+b+c;
-		 
-	 };
-	 let sum =myfunction(4,3,5);
-	 
-	 
-	  console.log(sum);
+
+
+
+
+             const marks =prompt("Enter new number: ")
 
 
 
 
 
-    function toCelsius(f){
-		
-		
-		return (5/9)*(f-32);
-		
-	};
 
-   let result=toCelsius(77);
-   
-   console.log(result);
-   
-   
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
