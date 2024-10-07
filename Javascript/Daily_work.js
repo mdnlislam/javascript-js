@@ -37,33 +37,33 @@
 	  
 	  
 	  
-	  const numbers =["A+" , "B+","C+","C-","D+","D-","D","F","C","F","A-","F"];
+	//  const numbers =["A+" , "B+","C+","C-","D+","D-","D","F","C","F","A-","F"];
 	  
-	       const result=[];
+	   //    const result=[];
 	  
 	  
-	        for(let number of numbers){
+	   //     for(let number of numbers){
 				
 				
-				if(number !=="F"){
+			//	if(number !=="F"){
 					
 					//result.push(number);
-				};
+			//	};
 				
-				if(number==="A+"){
+			//	if(number==="A+"){
 					
-					result.push("A-")
-				}
-				else{
-					result.push(number);
+			//		result.push("A-")
+		//		}
+			//	else{
+			//		result.push(number);
 					
-				}
+			//	}
 				
 				
 				
-			};
+		//	};
 	  
-	             console.log(result)
+	       //      console.log(result)
 	  
 	  
 	  
@@ -133,28 +133,69 @@
 	     //  console.log(greatPoint)
 	 
 	 
+	//Math.round(x)	Returns x rounded to its nearest integer
+	//Math.ceil(x)	Returns x rounded up to its nearest integer
+	//Math.floor(x)	Returns x rounded down to its nearest integer
+	//Math.trunc(x)	Returns the integer part of x (new in ES6)
+
+          
+
+
+           // const mathrount=Math.round(5.3);
+			
+			
+			
+			//console.log(mathrount)
+
+
+              const ceilnumber=Math.ceil(-5.8);
+			  
+			  
+			 // console.log(ceilnumber);
+			  
+			  // const floornumber=Math.floor(6);
+			  
+			  
+			 // console.log(floornumber);
+			  
+			  // const truncnumber=Math.trunc(5.9);
+			  
+			  
+			 // console.log(truncnumber);
 
 
 
+		// Math.sign()
 
-             const marks =prompt("Enter new number: ")
+		// Math.pow()
+		
+		// Math.sqrt()
+		
+		// Math.abs()
+		
+		// Math.sin()
+		
+		// Math.cos()
 
-
-
-
-
-
-
-
-
-
-
-
-
+		// Math.min() and Math.max()
 
 
+		// Math.random()
+		
+		// The Math.log() Method
+
+		// The Math.log2() Method
+		
+		// The Math.log10() Method
 
 
 
-
-
+    const singnumber=Math.sign(0);
+	
+	
+	 console.log(singnumber)
+	 
+	  const pownumber=Math.abs(8);
+	
+	
+	 console.log(pownumber)
