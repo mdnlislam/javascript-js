@@ -190,7 +190,7 @@
 
 
 
-    const singnumber=Math.sign(0);
+   /* const singnumber=Math.sign(0);
 	
 	
 	 console.log(singnumber)
@@ -198,4 +198,120 @@
 	  const pownumber=Math.abs(8);
 	
 	
-	 console.log(pownumber)
+	 console.log(pownumber)*/
+	 
+	 
+	 
+	 const student={
+		 
+		 bangla: 85,
+	   math : 70,
+	   arabic: 65,
+	   english:75,
+	 };
+	 
+	 
+	 function numberToPoint(marks){
+		let point=0;	
+		 
+		    if(marks>=80){
+				point= 5.0;
+			}
+			else if(marks>=70){
+				
+				point= 4.0;
+			}
+			else if(marks>=60){
+				
+				point= 3.0;
+			}
+		 else if(marks>=50){
+				
+				point= 2.0;
+			}
+		 
+		 			 return point;
+
+	 };
+	 
+   const subjects=Object.keys(student);
+   const subjectLength=subjects.length;
+	 
+	 
+/*	const bangla= numberToPoint(student['bangla']);
+	const math= numberToPoint(student['math']);
+	const arabic= numberToPoint(student['arabic']);
+	const english= numberToPoint(student['english']);
+	const poits =bangla+math+arabic+english*/
+	// const poitn=subjects;
+	// console.log(poitn)
+	let points=0;
+	 
+	 for(let subject of subjects){
+		const subjectNumber= student['bangla'];
+	const x= numberToPoint(subjectNumber);
+		 
+		 points= points+x 
+		// console.log(subject,subjectNumber)
+	 };
+	 
+	 const GPA=points/subjectLength
+	 
+		 console.log(GPA)
+	 
+	 
+	 
+	 
+	 
+	 const product={
+		 
+		 name:"i-phone",
+		 model:"x-altra",
+		 colour:"black",
+		 id:246718,
+		 
+	 };
+	 
+	const  objectvalues=Object.values(product);
+	
+	const  objectKey=Object.keys(product);
+	
+	 
+	 console.log(objectKey,objectvalues);
+	 
+	 
+	 
+	 // daily work
+	 
+	 
+	//let name; // variable difind kora
+	 
+	 // name="rakib"; // value assign kora
+	  
+	  let a="apple"; // variable difind and assign kora
+	  
+	  
+	//  kind of data type
+	  
+	  // 1. String
+	  // 2. number
+	  // 3. BigInt
+	  // 4. null
+	  // 5. undefined
+	  // 6. boolean
+	  // 7.Symbol
+	  // 8. Object  1. object  2. array object
+	  
+	  
+	  let b="belt"; // String
+	  let roll=246718; // number
+	  let goodBoy=true;  // boolean
+	 // const product={};  //object
+//	  const listName={}; //array object
+
+
+         let text="hello world";
+		 
+		 let result=text.slice(0,4);
+		 
+		   console.log(result);
