@@ -21,7 +21,7 @@ let product = {}; // object type variable
 let list = [ "apple","rony"]; // array  type variable
 
 
-const person={
+/*const person={
 	//name:name1,
 	name:"rakib",
 	roll:roll,
@@ -32,10 +32,10 @@ const person={
 
 let name2=name1;
 
-//console.log(name2)
+//console.log(name2) */
  
  
- const person2={
+/* const person2={
 	//name:name1,
 	name:"taher",
 	roll:246718,
@@ -54,7 +54,46 @@ const persons=[person,person2];
 		};
 		
 		console.log(p)
-	};
+	}; */
+ 
+ 
+ 
+  const person={
+	  name:'rony',
+	  roll:246718,
+	  department:"ceramic",
+  };
+ 
+ 
+    const person2={
+	  name:'rakib',
+	  roll:246717,
+	  department:"Chemistry",
+  };
+ 
+ 
+   const persons=[person,person2];
+   
+   //  console.log(persons);
+ 
+ 
+ 
+   for (let i=0;i<persons.length;i++) {
+	   const p=persons[i];
+	    if(p["name"]==='rakib'){
+			p["name"]='rakib mia'
+		};
+   console.log(p);
+			
+   };
+ 
+        
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

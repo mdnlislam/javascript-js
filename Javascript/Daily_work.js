@@ -202,7 +202,7 @@
 	 
 	 
 	 
-	 const student={
+	/* const student={
 		 
 		 bangla: 85,
 	   math : 70,
@@ -245,7 +245,7 @@
 	const poits =bangla+math+arabic+english*/
 	// const poitn=subjects;
 	// console.log(poitn)
-	let points=0;
+	/*let points=0;
 	 
 	 for(let subject of subjects){
 		const subjectNumber= student['bangla'];
@@ -288,7 +288,7 @@
 	 
 	 // name="rakib"; // value assign kora
 	  
-	  let a="apple"; // variable difind and assign kora
+	//  let a="apple"; // variable difind and assign kora
 	  
 	  
 	//  kind of data type
@@ -303,15 +303,121 @@
 	  // 8. Object  1. object  2. array object
 	  
 	  
-	  let b="belt"; // String
-	  let roll=246718; // number
-	  let goodBoy=true;  // boolean
+	 // let b="belt"; // String
+	//  let roll=246718; // number
+//	  let goodBoy=true;  // boolean
 	 // const product={};  //object
 //	  const listName={}; //array object
 
 
-         let text="hello world";
+       /*  let text="hello world";
 		 
 		 let result=text.slice(0,4);
 		 
-		   console.log(result);
+		   console.log(result);*/
+		   
+		   
+		   
+		   
+		/*   let A="Apple";
+		   let B ="bat" ;
+		   let C="cat";
+		   
+		   let AbcMeaning=A.concat(" ",  B,  " ",C);
+		   
+		   console.log(A+B+C,AbcMeaning);
+		   
+		   let text="all the best,bangladesh ,is a ,small county,";
+		   
+		   let textResult=text.replaceAll(",",".");
+		   
+		      console.log(textResult); */
+			  
+			  
+	/*	let roll='rakib';
+
+       let rollResult=roll.repeat(4);
+
+            console.log(rollResult);	   
+		   
+		   
+		   		  
+		let text = "345";
+
+     
+          result = text.repeat(5);
+            console.log(result);	   
+		   
+		   let quantity="13.35";
+		   
+		   let quantityResult=parseFloat( quantity);
+		   
+		     console.log(typeof quantityResult); */
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			         const student={
+						 bangla:4.00,
+						 English:5.00,
+						 Arabic:2.00,
+						 math:3.50,
+						 
+					 };
+					 
+					 
+					 
+				  function PointToGread(point){
+					  
+					  
+					    if(point>=5.00){
+						  
+						  return "A+";
+					  };
+					  if(point>=4.00){
+						  
+						  return "B+";
+					  };
+					    if(point>=3.00){
+						  
+						  return "C+";
+					  };
+					  
+					    if(point>=2.00){
+						  
+						  return "D+";
+					  };
+					  
+					  
+					  
+					  
+				  };
+			 
+			 const subjects=Object.keys(student);
+			 const subjectLength=subjects.length;
+			 console.log(subjectLength)
+			 // const subjectGread=PointToGread(3.35)
+			 
+			          // console.log(subjectGread,subjects,subjectLength);
+					   
+					let gread=0;   
+			for(let subject of subjects){
+				const subjectPoint=student[subject]
+			  const x=PointToGread(subjectPoint)
+				
+				// gread=gread+x
+				console.log(x );
+				
+				//console.log(gread);
+				
+			};		   
+			
+			
+				//console.log(gread);
+			

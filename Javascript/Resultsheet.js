@@ -23,7 +23,7 @@
 				point=5.0;
 			}
 			
-			else if (marks>=70){
+			else if (marks>=70){   
 				//return 5.00
 				point=4.0;
 			}
@@ -61,6 +61,7 @@
     // console.log(subject,x);
     
 	points=points+x;
+     console.log(x);
 	
 	}
    
@@ -68,7 +69,6 @@
      
      //console.log(bangla,math,arabic);
 
-     console.log(points,GPA);
 	 
 
 
