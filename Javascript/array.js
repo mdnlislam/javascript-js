@@ -102,6 +102,27 @@
 
 //console.log( filterNumber)
   
+  
+             
+			 
+			 const numbers=[5,10,23,9,10,12,];
+			const product=["BMW","sojoki","honda"];
+			 
+			 const filterNumber=product.filter(function(name){
+				 
+				// if(number>=10 ||number<10 ){
+					 return name=="BMW";
+				// };
+			 });
+  
+                console.log(filterNumber);
+  
+  
+  
+  
+  
+  
+  
 
 
 //const findNumber=product.find(function(name){
@@ -120,7 +141,7 @@
 
 
 
-  const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
+ /* const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
   
    const newResults=[];
    
@@ -139,7 +160,7 @@
 				}
 				
 			  };
-				   console.log(newResults,"new");
+				   console.log(newResults,"new");*/
   
    
    
@@ -162,16 +183,16 @@
 				  // console.log(newResults,"new");
   
   
-     const filterNumber= numbers.filter(function(number){
+    // const filterNumber= numbers.filter(function(number){
 		// console.log(number,"filter");
 		 
 		    // if(number==="A+" ||number==="B+" || number==="C+"||number==="C-"||number==="D+"  ){
 	  	          // return true
 			// } 
 				  
-			if(number !== "F")  {
-				return true
-			}
+			//if(number !== "F")  {
+			//	return true
+			//}
 			
 			//  if(number === "C+")  {
 			//	return true
@@ -188,7 +209,7 @@
 			//}
 		 
 		 
-	 });
+	// });
   
   
       // console.log(filterNumber)

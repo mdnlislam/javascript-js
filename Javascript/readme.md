@@ -35,7 +35,7 @@
 
 ## Condition
 
-    1. if else
+    1. if else      
     2. switch
 
 ## Function
@@ -58,7 +58,7 @@
     1. Array Filter
     2. Array reduce
     3. date Function
-    4. math function
+    4. math function 
 
 ## Conditional Operator
 
