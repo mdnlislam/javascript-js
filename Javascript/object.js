@@ -488,7 +488,7 @@
 // for (let fruit of fruits) {
 //   console.log(fruit);
 // }
-const model = "xx26";
+/*const model = "xx26";
 
 const product = {
   name: "i-phone",
@@ -502,4 +502,109 @@ product.screen = screen;
 
 // delete product.model;
 
-console.log(product, screen);
+console.log(product, screen); */
+
+
+
+     
+	 
+	  /*    ## Object
+
+    1. typeof object
+    2. object to string
+    3. separet key & valus
+    4. valus access
+    5. values change or update or add
+    6. property delete  */
+
+     
+	 // type of object
+	 //1. object 2.array object
+	 
+	 
+	 // object to string
+	/*  const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	 const ObjectToString=JSON.stringify(product);
+	 console.log( typeof ObjectToString); */
+	 
+	 
+    // separet key & valus
+	 
+	 
+	/* const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	 
+	 const onlyKey=Object.keys(product);
+	 console.log(onlyKey); */
+	 
+	 
+	 
+	/*  const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	 
+	 const onlyValues=Object.values(product);
+	 console.log(onlyValues); */
+	 
+	 
+	 
+    // values access
+	 
+	 
+	 
+	/*  const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	  const valueAccess=product['colour']
+	    console.log(valueAccess); */
+		
+		
+		
+		
+    // values change or update or add
+		
+		
+	/*	 const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	  
+	   delete product['name'];
+	   
+	   console.log(product) */
+	   
+	   
+	   
+	   
+	  /*  const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	  
+       const valueUpdate=product['colour']='white';	   
+	   console.log(product)  */
+	   
+	   
+	   
+	   // add
+	     const product={
+		  name:'i-phone',
+		  model:'x-altra',
+		  colour:'black',
+	  };
+	  
+       product['screen']='7-inch'   
+	   console.log(product)

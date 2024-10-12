@@ -23,3 +23,5 @@
 	 let stringToNumber=Number(name);
 	 
 	 console.log( stringToNumber)
+	 
+	 

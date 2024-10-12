@@ -112,5 +112,5 @@ const persons=[person,person2];
 	  
 	  
  // };
-	 // console.log(persons,new Date());
+	 // console.log(persons,new Date());  
   
