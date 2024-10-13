@@ -105,7 +105,7 @@
   
              
 			 
-			 const numbers=[5,10,23,9,10,12,];
+		/*	 const numbers=[5,10,23,9,10,12,];
 			const product=["BMW","sojoki","honda"];
 			 
 			 const filterNumber=product.filter(function(name){
@@ -115,7 +115,7 @@
 				// };
 			 });
   
-                console.log(filterNumber);
+                console.log(filterNumber); */
   
   
   
@@ -222,18 +222,79 @@
 
 
 
+/* Array Object
+
+    1. how to identify array
+    2. data add,add data start of array,add data end of array,delete data start of array,delete dada end  of array
+    3. data update ,delete
+    4. find mathode  */
 
 
 
 
+ //  1. how to identify array
+ 
+   /*    const fruits =["Banana","Orange","Apple","Mango"];
+	   
+	   const result=Array.isArray(fruits);
+     
+             console.log( typeof result); */
+			 
+
+
+const fruits ={a:2,b:"bat"};
+	   
+	   const result=Array.isArray(fruits);
+     
+             console.log(result)
+			 
 
 
 
+			//data add
+			
+		/*	const numbers=[1,2,3,4,5,];
+			
+			numbers.push(6,7);
+			   console.log(numbers) */
 
 
-
-
-
-
-
-
+          //  unshift
+		/*  const numbers=[1,2,3,4,5,];
+			
+			numbers.unshift(0);
+			   console.log(numbers) */
+			   
+			   
+			   // shift
+			   
+			   
+                const numbers=[1,2,3,4,5,];
+			
+			numbers.shift(1);
+			 //  console.log(numbers)
+			   
+			   
+			   
+			   //delete data start of array
+			   
+			   /*  const productItems=["BMW","honda","TVC","SUZUCI"];
+				 
+				      productItems.shift();
+					  console.log(productItems); */
+					  
+					  
+					  
+			   //delete data end of array
+					  
+					/*   const productItems=["BMW","honda","TVC","SUZUCI"];
+				 
+				      productItems.pop();
+					  console.log(productItems); */
+					  
+					  
+					  
+					  const productItems=["BMW","honda","TVC","SUZUCI"];
+				 
+				         productItems.splice(2,0,"vpm");
+					  console.log(productItems); 
