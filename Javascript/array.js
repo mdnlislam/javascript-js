@@ -269,9 +269,9 @@ const fruits ={a:2,b:"bat"};
 			   // shift
 			   
 			   
-                const numbers=[1,2,3,4,5,];
+            //    const numbers=[1,2,3,4,5,];
 			
-			numbers.shift(1);
+		//	numbers.shift(1);
 			 //  console.log(numbers)
 			   
 			   
@@ -294,7 +294,22 @@ const fruits ={a:2,b:"bat"};
 					  
 					  
 					  
-					  const productItems=["BMW","honda","TVC","SUZUCI"];
+				/*	  const productItems=["BMW","honda","TVC","SUZUCI"];
 				 
 				         productItems.splice(2,0,"vpm");
-					  console.log(productItems); 
+					  console.log(productItems);  */
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+    // find mathode  soto ba boro akta value return kore
+	     const numbers=[10,6,8,20,30,35,];
+		 
+		 const findNumber=numbers.find(function(number){
+			 return number<20;
+			 
+		 });
+					  console.log(findNumber)
