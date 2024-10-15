@@ -64,7 +64,7 @@
 				
 				
 				
-				const todayName=new Date().getDay();
+			/*	const todayName=new Date().getDay();
 				  let day;
 				  
 				  if(todayName===0){
@@ -93,4 +93,22 @@
 					  day="nothing day"
 				  }
 				  
-				  console.log(day)
+				  console.log(day) */
+				  
+				  
+				  
+				  let x ='0';
+				  let b;
+				  switch(x){
+					case 0:
+                    b="off";
+                    break;
+
+                    case 1:
+                    b ="no";
+                    break;
+                    default:
+                       b ="no value found"					
+					  
+				  };
+				  console.log(b);

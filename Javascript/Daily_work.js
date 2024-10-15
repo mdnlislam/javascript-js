@@ -35,7 +35,10 @@
 			 
 			 
 		 };
-
+		     
+          for(let subjects in student ){
+			  console.log(subjects)
+		  };
      const subjects=Object.keys(student);
 	 const subjectLength=subjects.length;
 
