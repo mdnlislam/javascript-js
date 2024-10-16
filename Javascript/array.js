@@ -313,3 +313,32 @@ const fruits ={a:2,b:"bat"};
 			 
 		 });
 					  console.log(findNumber)
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+	 const student={
+	 bangla:50,
+	 english:60,
+	 arabic:65,
+	 
+ };
+					  
+					  
+					  
+					  
+					  
+					    let sub=0;
+          for(let subjects in student ){
+			  
+			 const subjectLength=subjects.length
+			 
+			 sub=sub+subjectLength;
+		  };
+		  
+		  const gpa= sub/subjectLength
+		  
+			  console.log(gpa)

@@ -14,7 +14,7 @@
   };
 
 
-
+     // akhane number nitasi return hoitaase point
  function numberToPoint(marks){
 
 		let point=0;	
@@ -42,33 +42,50 @@
 			 return point;
 			
 		}
-
-   const subjects=Object.keys(student);
-   const subjectLength=subjects.length;
-
-  /* const bangla = numberToPoint(student.bangla);
+  
+function PointToGreade(point){
+		     let greade=0;
+		     if(point>=5.0){
+				 
+				greade="A+"; 
+			 }
+			 else if (point>4.0){
+				 greade="B+";
+			 }
+			  else if (point>3.0){
+				 greade="B+";
+			 }
+			  else if (point>2.0){
+				 greade="C+";
+			 };
+			 
+		      
+		   return greade;
+	   };
 	
-    const math = numberToPoint(student.math);
-    const arabic = numberToPoint(student.arabic);
-	const points=bangla+math+arabic;
-	const GPA=points/subjectLength;*/
-	let points=0;
-   
-   for (let subject  of subjects) {
+	 // console.log(greadePoint);
+   const subjects=Object.keys(student);  //object ar keys ( subject berkortasi)
+   const subjectLength=subjects.length;    // subject ar length berkortasi ( koto golo subject ase)
+
+	let points=0;    
+   /* 1. subject er number berkortesi
+	2. akhane x er value hisabe subject er point paitasi
+	3. porboborti point sathe new point add hoitase*/
+   for (let subject  in  student) {       
 	   const subjectNumber=student[subject];
 	   const x = numberToPoint(subjectNumber);
-  // code block to be executed
-    // console.log(subject,x);
-    
+ 
+     
 	points=points+x;
-     console.log(x);
+     //console.log(x);
 	
 	}
    
 	const GPA=points/subjectLength;
      
-     //console.log(bangla,math,arabic);
-
+	const greadePoint=PointToGreade(GPA);
+    
+             console.log(greadePoint)
 	 
 
 

@@ -35,20 +35,25 @@
 			 
 			 
 		 };
-		     
-          for(let subjects in student ){
-			  console.log(subjects)
-		  };
+		   
+		  
      const subjects=Object.keys(student);
 	 const subjectLength=subjects.length;
-
+           console.log(subjects)
    // const bangla= numberToPoint(student['bangla']);
   //  const arabic= numberToPoint(student['arabic']);
 	
 	   //console.log(subjectLength)
 	   
 	            let points=0;
-	   for (let subject of subjects){
+	 /*  for (let subject of subjects){
+		 const subjectNumber=student[subject]; 
+    const x= numberToPoint(subjectNumber);
+		   
+		   points=points+x;
+		   
+	   };*/
+	     for (let subject in  student){
 		 const subjectNumber=student[subject]; 
     const x= numberToPoint(subjectNumber);
 		   
