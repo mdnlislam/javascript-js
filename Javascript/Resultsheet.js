@@ -4,14 +4,7 @@
 
 
 
-  const student = {
-	  
-	 // id:246718,
-	   bangla: 85,
-	   math : 70,
-	   arabic: 65,
-	   english:75,
-  };
+ 
 
 
      // akhane number nitasi return hoitaase point
@@ -63,7 +56,8 @@ function PointToGreade(point){
 		   return greade;
 	   };
 	
-	 // console.log(greadePoint);
+	function subjectToGrad(student){
+		// console.log(greadePoint);
    const subjects=Object.keys(student);  //object ar keys ( subject berkortasi)
    const subjectLength=subjects.length;    // subject ar length berkortasi ( koto golo subject ase)
 
@@ -85,8 +79,19 @@ function PointToGreade(point){
      
 	const greadePoint=PointToGreade(GPA);
     
-             console.log(greadePoint)
-	 
+          return greadePoint
+	};
+	
+       const student = {
+	  
+	 // id:246718,
+	   bangla: 85,
+	   math : 70,
+	   arabic: 65,
+	   english:75,
+	   chamisty:90,
+  };
+             console.log(subjectToGrad(student))
 
 
 

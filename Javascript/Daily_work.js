@@ -1,11 +1,5 @@
 
 
- const student={
-	 bangla:50,
-	 english:60,
-	 arabic:65,
-	 
- };
          function numberToPoint(marks){
 			 let point=0;
 			 if(marks>=80){
@@ -35,36 +29,7 @@
 			 
 			 
 		 };
-		   
-		  
-     const subjects=Object.keys(student);
-	 const subjectLength=subjects.length;
-           console.log(subjects)
-   // const bangla= numberToPoint(student['bangla']);
-  //  const arabic= numberToPoint(student['arabic']);
-	
-	   //console.log(subjectLength)
-	   
-	            let points=0;
-	 /*  for (let subject of subjects){
-		 const subjectNumber=student[subject]; 
-    const x= numberToPoint(subjectNumber);
-		   
-		   points=points+x;
-		   
-	   };*/
-	     for (let subject in  student){
-		 const subjectNumber=student[subject]; 
-    const x= numberToPoint(subjectNumber);
-		   
-		   points=points+x;
-		   
-	   };
-	   
-	   const GPA=points/subjectLength;
-		  // console.log(GPA)
-	   
-	   
+		 
 	   function PointToGreade(point){
 		     let greade=0;
 		     if(point>=5.0){
@@ -83,7 +48,66 @@
 			 
 		      
 		   return greade;
-	   };
-	const greadePoint=PointToGreade(GPA);
+	   };   
+		 function subjectsToGrad(student){
+			  const subjects=Object.keys(student);
+	 const subjectLength=subjects.length;
+          // console.log(subjects)
+  
+	   
+	            let points=0;
 	
-	  console.log(greadePoint);
+	     for (let subject in  student){
+		 const subjectNumber=student[subject]; 
+    const x= numberToPoint(subjectNumber);
+		   
+		   points=points+x;
+		   
+	   };
+	   
+	   const GPA=points/subjectLength;
+		  // console.log(GPA)
+	   
+	  
+	const greadePoint=PointToGreade(GPA);
+	           return greadePoint
+		 }; 
+		 
+		 
+		 
+ const student={
+	 bangla:50,
+	 english:60,
+	 arabic:65,
+	 
+ };
+ 
+ const student2={
+	 bangla:60,
+	 english:80,
+	 arabic:85,
+	 
+ };
+ 
+ const student3={
+	 bangla:60,
+	 english:80,
+	 arabic:85,
+	 
+ };
+ 
+  const students=[student,student2,{
+	 bangla:60,
+	 english:80,
+	 arabic:85,
+	 
+ }];
+                
+         for(let subjectStudents of students ){
+			   // console.log(subjectStudents)
+			const grade=subjectsToGrad(subjectStudents)
+		      console.log(grade)
+			  
+		 };
+	 
+     
