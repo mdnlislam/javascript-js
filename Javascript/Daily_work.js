@@ -1,6 +1,6 @@
 
 
-         function numberToPoint(marks){
+        function numberToPoint(marks){
 			 let point=0;
 			 if(marks>=80){
 				 
@@ -30,97 +30,98 @@
 			 
 		 };
 		 
-	   function PointToGreade(point){
-		     let greade=0;
-		     if(point>=5.0){
+	    function PointToGreade(point){
+		     let greade="";
+		    if(point>=5.0){
 				 
 				greade="A+"; 
-			 }
-			 else if (point>4.0){
-				 greade="B+";
-			 }
-			  else if (point>3.0){
-				 greade="B+";
-			 }
-			  else if (point>2.0){
-				 greade="C+";
-			 };
-			 
+			}
+			else if (point>4.0){
+				greade="B+";
+			}
+			else if (point>3.0){
+				greade="B+";
+			}
+			else if (point>=2.0){
+				greade="C+";
+			};
 		      
 		   return greade;
-	   };   
-		 function subjectsToGrad(student){
-			  const subjects=Object.keys(student);
-	 const subjectLength=subjects.length;
-          // console.log(subjects)
-  
-	   
-	            let points=0;
+		};   
+ 
+ 
+ 
+ function subjectsToGrad(student){
+	const subjects=Object.keys(student);
+	const subjectLength=subjects.length;
+	console.log(subjects)
+
+	let points=0;
+    const results=[];       
+	for (let subject in  student){
+		const subjectNumber=student[subject]; 
+		const point= numberToPoint(subjectNumber);
+		const grade=  PointToGreade(point);
+		points=points+point;
+		const result={
+		  subject:subject,
+		  number:subjectNumber,
+		  point:point,
+		  grade:grade,
+		}; 
+		results.push(result);
+		
+	};
+
+	const GPA=points/subjectLength;
+	// console.log(GPA)
+
+
+	const greade=PointToGreade(GPA);
+	return {greade,results,name:'rakib'};
 	
-	     for (let subject in  student){
-		 const subjectNumber=student[subject]; 
-    const x= numberToPoint(subjectNumber);
-		   
-		   points=points+x;
-		   
-	   };
-	   
-	   const GPA=points/subjectLength;
-		  // console.log(GPA)
-	   
-	  
-	const greadePoint=PointToGreade(GPA);
-	           return greadePoint
-		 }; 
+}; 
+		 
+			 
 		 
 		 
-		 
- const student={
-	
-	
-	 Depertment:{ subjects:{ bangla:50,
-	 english:60,
-	 arabic:65,}},
+ const student1={
+	/* Depertment:{
+		subjects: {
+			bangla:50,
+			english:60,
+			arabic:65,
+		}
+	}, */
+
+		subjects: {
+			bangla:50,
+			english:60,
+			arabic:65,
+		}
  };
  
- /*		 
- const student={
-	
-	 subjects:{ bangla:50,
-	 english:60,
-	 arabic:65,}
- }; */
+ 
+  
+		 /*		 
+		 const student={
+			
+			 subjects:{ bangla:50,
+			 english:60,
+			 arabic:65,}
+		 }; */
  
  
-  const students=[student
-	
-	 
- ];
+ const students=[student1];
                 
-         for(let Student of students ){
-			   // console.log(subjectStudents)
-			   const Depertment=student['Depertment'];
-			   const subj=Depertment['subjects'];
-			const grade=subjectsToGrad(subj)
-		      console.log(grade)
-			  
-		 };   
+ for(let student of students ){
+	 student['result']={};
+	// console.log(subjectStudents)
+	//const Depertment=student['Depertment'];
+	const subj=student['subjects'];
+	const x=subjectsToGrad(subj)
+	console.log(x,111)
+	  
+ };   
 		 
-		// amra jani
-	/* 1.total man power 20 jon 
-	   2. total working day 15 
-	    3. 20 man working day 10 days
-		 4. 10 din por some man power go so working complete 10 days after*/
-		 
-		 
-		 
-		      let totalManPower=20;
-			  let completeWorkingTime=15;
-		 
-		             
-		 
-		 
-		      // akhane total work ar unit ber korbo
-			  
-	 
-     
+	//console.log(students);
