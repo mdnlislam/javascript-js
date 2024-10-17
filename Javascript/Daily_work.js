@@ -76,38 +76,51 @@
 		 
 		 
  const student={
-	 bangla:50,
+	
+	
+	 Depertment:{ subjects:{ bangla:50,
 	 english:60,
-	 arabic:65,
-	 
+	 arabic:65,}},
  };
  
- const student2={
-	 bangla:60,
-	 english:80,
-	 arabic:85,
-	 
- };
+ /*		 
+ const student={
+	
+	 subjects:{ bangla:50,
+	 english:60,
+	 arabic:65,}
+ }; */
  
- const student3={
-	 bangla:60,
-	 english:80,
-	 arabic:85,
-	 
- };
  
-  const students=[student,student2,{
-	 bangla:60,
-	 english:80,
-	 arabic:85,
+  const students=[student
+	
 	 
- }];
+ ];
                 
-         for(let subjectStudents of students ){
+         for(let Student of students ){
 			   // console.log(subjectStudents)
-			const grade=subjectsToGrad(subjectStudents)
+			   const Depertment=student['Depertment'];
+			   const subj=Depertment['subjects'];
+			const grade=subjectsToGrad(subj)
 		      console.log(grade)
 			  
-		 };
+		 };   
+		 
+		// amra jani
+	/* 1.total man power 20 jon 
+	   2. total working day 15 
+	    3. 20 man working day 10 days
+		 4. 10 din por some man power go so working complete 10 days after*/
+		 
+		 
+		 
+		      let totalManPower=20;
+			  let completeWorkingTime=15;
+		 
+		             
+		 
+		 
+		      // akhane total work ar unit ber korbo
+			  
 	 
      
