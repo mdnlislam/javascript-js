@@ -108,12 +108,27 @@
 		 
 		 
 		            let points=0;
-		 
+		            // let results={};
 		 for (let subject in subjects ){
 			 const subjectNumber=subjects[subject];
 		 const x=numberToPoint(subjectNumber);
-			 
+			const grade=pointToGrade(x); 
 			 points=points+x;
+			  /*first subject name
+				 2. number
+				 3.point
+				 4.grade
+				 */
+			 const objects={
+				// subject:{subject,subjectNumber,x,grade}
+				subject:subject,
+				number:subjectNumber,
+				point:x,
+				grade:grade,
+				 
+			 }
+			   const value=Object.values(objects);
+			 console.log(value);
 		 };
 		 const subjectsName=Object. keys(subjects);
 		 const subjectsLength=subjectsName.length;
@@ -139,7 +154,9 @@
 				return grade;
 			};
 		 const grade=pointToGrade(GPA);
-		        return grade;
+		        return  grade
+			   
+				
 			};
 			
 		 

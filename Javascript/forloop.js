@@ -1,6 +1,6 @@
 
    
- /*const person={
+ const person={
 	 
 	 name:"rakib",
 	 roll:246718,
@@ -41,7 +41,7 @@
 	  
 	  
 	  
-  }; */
+  }; 
  
 
              
@@ -104,7 +104,7 @@
 						// for in
 						
 				
-                 const person = {
+              /*   const person = {
 					 name:"rony",
 					 age:27,
 					 height:5.7,
@@ -113,4 +113,4 @@
 			   
 			   for(let men in person){
 				   console.log(person[men]);
-			   };
+			   }; */
