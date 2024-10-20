@@ -65,3 +65,8 @@
     1.and  &&
     2.or   ||
     3.not  !
+
+## date 21-10-24
+	1. redo resultsheet
+	2. GPA&point . arpor 2 digit(2.66)
+	3. practics sabek kaj sob golo
