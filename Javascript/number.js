@@ -1,6 +1,6 @@
 
 
-  let num=15;
+/*  let num=15;
   
   let text=num.toString();
   
@@ -22,6 +22,12 @@
 	 
 	 let stringToNumber=Number(name);
 	 
-	 console.log( stringToNumber)
+	 console.log( stringToNumber) */
+	 
+	 
+	 let number=2.56666;
+	   
+	   const gpa=number.toFixed(2)
+	   console.log(gpa)
 	 
 	 

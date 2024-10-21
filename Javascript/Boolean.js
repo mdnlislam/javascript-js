@@ -128,5 +128,7 @@ function subjectsToGrade(subjects) {
     return grade;
   }
   const grade = pointToGrade(GPA);
-  return {totalGrade: grade,GPA:GPA, results };
+  const GpaPoint=GPA.toFixed(2);
+  
+  return {totalGrade: grade, GPA:GpaPoint, results };
 }
