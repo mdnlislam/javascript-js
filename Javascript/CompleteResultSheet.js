@@ -8,18 +8,27 @@
 6. avares point ber korbo
 7. point to grade ber korbo
 8. total system ta dinamic korbo
-9. tar por akadik student nibo 
+9. tar por akadik subject1 nibo 
 10. portek buject ar ar alada alada number /point/grade ber korbo
 11. alada alada result ta akta object ar bitore doabo
 12. gpa . ar por 2 digit nibo
 */
 
- const student={
-	 bangla:75,
-	 English:65,
+ const subject1={
+	 bangla:80,
+	 English:80,
 	 Arabic:85,
+ }
+ const subject2={
+	 bangla:50,
+	 English:60,
+	 Arabic:50,
  };
- const grade=subjectsToGrade(student)
+ const subjects=[subject1,subject2]
+ for (let subject1 of subjects ){
+	 const grade=subjectsToGrade(subject1)
+	console.log(grade);
+ };
  function subjectsToGrade(subjets){
 	function NumberToPoint(marks){
 	 let point=0;
@@ -39,13 +48,15 @@
  };
 //console.log(point);
 
+
 let points=0;
-for(let subjects in student ){
-	const subjectName=student[subjects];
-	const x=NumberToPoint(subjectName)
+for(let subjects in subject1 ){
+	const subjectName=subject1[subjects];
+	const x=NumberToPoint(subjectName) 
+    
 	points=points+x;
 };
-	const subjectKeys=Object.keys(student);
+	const subjectKeys=Object.keys(subject1);
 	const subjectLength=subjectKeys.length;
 	const GPA=points/subjectLength;
 
@@ -65,9 +76,9 @@ function pointToGrade(point){
 		grade="C+";
 	}
 	return grade;
-};
+}
 const Grade=pointToGrade(GPA);
-	console.log(Grade);
+	return Grade;
 };
  
 

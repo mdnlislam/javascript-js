@@ -1,6 +1,4 @@
-
-
-        function numberToPoint(marks){
+/*    function numberToPoint(marks){
 			 let point=0;
 			 if(marks>=80){
 				 
@@ -86,13 +84,13 @@
 		 
 		 
  const student1={
-	/* Depertment:{
+	 Depertment:{
 		subjects: {
 			bangla:50,
 			english:60,
 			arabic:65,
 		}
-	}, */
+	},
 
 		subjects: {
 			bangla:50,
@@ -110,9 +108,8 @@
 			 english:60,
 			 arabic:65,}
 		 }; */
- 
- 
- const students=[student1];
+
+/*const students=[student1];
                 
  for(let student of students ){
 	 student['result']={};
@@ -124,4 +121,22 @@
 	  
  };   
 		 
-	//console.log(students);
+	//console.log(students); */
+const subjectToGrade=require("./subjectToGrade");
+const subjects1 = {
+  bangla: 50,
+  English: 75,
+  arabic: 80,
+};
+const subjects2 = {
+  bangla: 70,
+  English: 80,
+  arabic: 80,
+};
+const students = [subjects1, subjects2];
+for (let student of students) {
+  const Grade = subjectToGrade(student);
+  console.log(Grade);
+}
+
+

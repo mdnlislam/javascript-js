@@ -4,9 +4,9 @@ const subjects1 = {
   arabic: 65,
 };
 const subjects2 = {
-  bangla: 50,
+  bangla: 70,
   english: 60,
-  arabic: 65,
+  arabic: 70,
 };
   const students=[subjects1,subjects2];
   for (let subjects of students ){
