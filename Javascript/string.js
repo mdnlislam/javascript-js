@@ -147,4 +147,34 @@ console.log(typeof toString(text1));
 	
 	
 	
+	// daily works
+	
+	let name; // variable difined kora
+	name="rakib"; // value assign kora 
+	let a="apple"; // variable  difiend /value assing kora
+	
+	// type of Object
+	/*
+	1.String
+	2. Number
+	3. Bigien
+	4. boolean
+	5. null
+	6. undefined
+	7. Symbol
+	8. Object
+	kind of Object
+	1.Object
+	2.array Object
+	3. date Object
+	*/
+	
+	/*
+	1. let b="beat"; String
+	2. let x=246718; Number
+	3. let goodBoy=true; // boolean
+	4. const product={}; // Object
+	5. const itemName=[]; // array Object
+	
+	*/
 	
