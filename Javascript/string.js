@@ -58,7 +58,7 @@
 
 // console.log(resust1)
 
-let text = "345";
+/*let text = "345";
 
 result = text.repeat(5);
 console.log(typeof Number(text));
@@ -96,7 +96,7 @@ console.log(typeof toString(text1));
 	//1.Object
 	// 2.array Object
 	// data Object
-	const nameList=[]; // array Object
+	/*const nameList=[]; // array Object
 	
 	
 	let b="beat"; // String
@@ -177,4 +177,34 @@ console.log(typeof toString(text1));
 	5. const itemName=[]; // array Object
 	
 	*/
+	
+	/*
+    1. number to string
+    2. concat (3 ways) */
+	
+	
+	let x =246718;
+	let numberToString=x.toString();
+	console.log( numberToString)
+	
+	let num = 15;
+	
+	let numToString=num.toString(4);
+	console.log(numToString)
+	
+	
+	let firstName="nurul islam";
+	let lastName="rakib";
+	let he ="good boy";
+	
+	let fullName=firstName.concat(lastName,"",he)
+	
+	//let result=(firstName+lastName+he);
+	let result=`${firstName}${lastName}${he}`;
+	
+	console.log(fullName)
+	console.log(result)
+	
+	
+	
 	
