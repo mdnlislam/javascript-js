@@ -600,11 +600,43 @@ console.log(product, screen); */
 	   
 	   
 	   // add
-	     const product={
+	  /*   const product={
 		  name:'i-phone',
 		  model:'x-altra',
 		  colour:'black',
 	  };
 	  
        product['screen']='7-inch'   
-	   console.log(product)
+	   console.log(product) */
+	   
+	/*   ## Object
+
+    1. typeof object
+    2. object to string
+    3. separet key & valus
+    4. valus access
+    5. valus change or update or add
+    6. property delete */
+	
+	
+	//typeof object
+	//1. object
+	//2. array object
+	// 3.date object
+	
+	//object to string
+	
+	const product={
+		name:"I-phone",
+		colour:"black",
+	};
+	
+	const objectToString=JSON.stringify(product);
+	console.log(objectToString)
+	
+	
+	const itemName=["BMW","SOZUKI","HONDA"];
+	const arrayToString=JSON.stringify(itemName);
+	console.log(arrayToString)
+	
+	

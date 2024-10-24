@@ -57,7 +57,7 @@
 		  7
 		 */
 
-const subjects = {
+/*const subjects = {
   bangla: 75,
   english: 80,
   arabic: 65,
@@ -100,7 +100,7 @@ function subjectsToGrade(subjects) {
 				 3.point
 				 4.grade
 				 */
-    const result = {
+  /*  const result = {
      // subject: subject,
       number: subjectNumber,
       point: point,
@@ -131,4 +131,47 @@ function subjectsToGrade(subjects) {
   const GpaPoint=GPA.toFixed(2);
   
   return {totalGrade: grade, GPA:GpaPoint, results };
-}
+} */
+
+
+/*## Boolean
+
+    1. valus of Boolean
+    2. number to boolean
+    3. string to boolean - 3ways kora jai
+    4. boolean to number
+    5. boolean to string */
+	
+	
+ let x = 456;
+ let numberToBoolean=Boolean(x);
+ console.log(numberToBoolean)
+ let y = 0;
+ let numToBoolean=Boolean(y);
+ console.log(numToBoolean)
+ 
+ //string to boolean 
+ 
+ let A ="Apple";
+ let stringToBoolean=Boolean(A);
+ console.log(typeof stringToBoolean)
+ 
+ let b ="bat";
+ let booleanvalue=!!b;
+ console.log( booleanvalue)
+ 
+ //boolean to number
+ 
+ let goodboy=true;
+ let booleanToNumber=Number(goodboy);
+ console.log(booleanToNumber)
+ 
+ let goodGirl=false;
+ let BoolToNum=Number(goodGirl);
+ console.log(BoolToNum)
+ 
+ //boolean to string
+ 
+ let heGood=true;
+ let BooleanToString=heGood.toString();
+ console.log( BooleanToString)
