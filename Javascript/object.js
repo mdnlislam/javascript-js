@@ -639,4 +639,20 @@ console.log(product, screen); */
 	const arrayToString=JSON.stringify(itemName);
 	console.log(arrayToString)
 	
+	const bubjectName={
+		bangla:80,
+		English:70,
+		
+	};
+	
+	/*const subjectKeys=Object.keys(bubjectName);
+	const subjectValue=Object.values(bubjectName);
+	bubjectName['bangla']=90,
+	bubjectName['arabic']=65,
+	delete bubjectName['English']*/
+	const valueAccess=bubjectName['English']
+	
+	
+	console.log(valueAccess);
+	
 	

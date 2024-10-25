@@ -242,11 +242,11 @@
 			 
 
 
-const fruits ={a:2,b:"bat"};
+//const fruits ={a:2,b:"bat"};
 	   
-	   const result=Array.isArray(fruits);
+	   //const result=Array.isArray(fruits);
      
-             console.log(result)
+            // console.log(result)
 			 
 
 
@@ -306,7 +306,7 @@ const fruits ={a:2,b:"bat"};
 					  
 					  
     // find mathode  soto ba boro akta value return kore
-	     const numbers=[10,6,8,20,30,35,];
+	  /*  const numbers=[10,6,8,20,30,35,];
 		 
 		 const findNumber=numbers.find(function(number){
 			 return number<20;
@@ -341,4 +341,38 @@ const fruits ={a:2,b:"bat"};
 		  
 		  const gpa= sub/subjectLength
 		  
-			  console.log(gpa)
+			  console.log(gpa) */
+			  
+			  
+			  
+/*## Array Object
+
+    1. how to identify array
+    2. data add,add data start of array,add data end of array,delete data start of array,delete dada end  of array
+    3. data update ,delete
+    4. find mathode */
+	
+	
+
+// how to identify array
+
+/*const result=Array.isArray(productName);
+console.log(result);
+
+const product={
+	b:"bat",
+a:"apple",};
+const results=Array.isArray(product);
+console.log(results); */
+
+
+ //data add
+const productName=["BMW","HONDA","SOZUKI"];
+
+productName.push("TVS");
+productName.unshift("runner");
+productName.shift();
+productName.pop();
+delete productName[2];
+
+console.log(productName)
