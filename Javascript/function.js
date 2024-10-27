@@ -146,7 +146,7 @@
    
    
    
-              for(let number in numbers){
+              for(let number of numbers){
 				//console.log(number);
 				 if(number[number] !== "F")  {
 					//newResults.push(number)
@@ -164,4 +164,14 @@
 				   
 				   
 				   
-				   
+const ages=[32,33,5,7,8,23,];	
+const filtering=ages.filter(checkAdult);
+function 	checkAdult(age){
+	
+	return age>8;
+};	
+console.log(filtering);	   
+
+var name="rakib";
+var name="Rony",
+console.log(name)

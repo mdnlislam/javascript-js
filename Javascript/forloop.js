@@ -1,6 +1,6 @@
 
    
- const person={
+/* const person={
 	 
 	 name:"rakib",
 	 roll:246718,
@@ -41,7 +41,7 @@
 	  
 	  
 	  
-  }; 
+  }; */
  
 
              
@@ -114,3 +114,60 @@
 			   for(let men in person){
 				   console.log(person[men]);
 			   }; */
+
+const number =[4,9,16,25];
+const result=number.map(Math.sqrt);
+console.log(result);
+
+
+const numbers=[65,44,12,4];
+const newArr = numbers.map(myFunction);
+function myFunction(num){
+	return num/2;
+};
+console.log(newArr);
+
+
+
+// map
+const person=[
+{firstname:"rony",lastname:"mia"},
+{firstname:"abu",lastname:"hanif"},
+{firstname:"rakib",lastname:"mia"},
+
+
+];
+const results=person.map(getFullName);
+function getFullName(item){
+	return [item.firstname,item.lastname,item]
+};
+console.log(results);
+
+
+const cars =["BMW","VOLVO","SAAB","FORD"];
+for(let i=0;i<cars.length;i++){
+	const result=cars[i];
+	console.log(result);
+};
+
+for (let i=0;i<5;i++){
+	const bang='Bangladesh'+[i];
+	console.log(bang);
+};
+
+
+const man ={
+	fname:"rony",
+	lname:"mia"
+};
+
+for(let x in man ){
+	const manname=man[x];
+	console.log(manname);
+};
+
+const num1=[45,4,9,16,25];
+for(let y in num1){
+	const resultNum=num1[y];
+	console.log(resultNum);
+};

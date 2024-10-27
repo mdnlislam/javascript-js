@@ -6,7 +6,7 @@
     2. switch */
 
 
-     const time = new Date().getHours();
+    /* const time = new Date().getHours();
 	 
 	  let greeting;
 	  if(time<9){
@@ -97,7 +97,7 @@
 				  
 				  
 				  
-				  let x ='0';
+				  let x =0;
 				  let b;
 				  switch(x){
 					case 0:
@@ -112,3 +112,34 @@
 					  
 				  };
 				  console.log(b);
+
+
+const time=new Date().getHours();
+let greeting;
+if(time<10){
+	greeting="good Morning";
+}
+else if(time<20){
+	greeting="good day";
+}
+else {
+	greeting="good evening";
+}
+console.log(greeting);
+
+
+//switch
+let text;
+switch (new Date().getDay()){
+	default:
+	text="looking forward to the weekend";
+	break;
+	case 6:
+	text="Today is Saturday";
+	break;
+	case 0:
+	text="Today is sunday";
+	
+	
+}
+console.log(text);

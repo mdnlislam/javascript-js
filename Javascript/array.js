@@ -376,3 +376,12 @@ productName.pop();
 delete productName[2];
 
 console.log(productName)
+
+
+const ages = [3,10,18,20];
+function checkAge(age){
+	return age >18;
+};
+const result=ages.find(checkAge);
+console.log(result);
+	

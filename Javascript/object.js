@@ -626,7 +626,7 @@ console.log(product, screen); */
 	
 	//object to string
 	
-	const product={
+	/*const product={
 		name:"I-phone",
 		colour:"black",
 	};
@@ -645,14 +645,21 @@ console.log(product, screen); */
 		
 	};
 	
-	/*const subjectKeys=Object.keys(bubjectName);
+	const subjectKeys=Object.keys(bubjectName);
 	const subjectValue=Object.values(bubjectName);
 	bubjectName['bangla']=90,
 	bubjectName['arabic']=65,
 	delete bubjectName['English']*/
-	const valueAccess=bubjectName['English']
+	/*const valueAccess=bubjectName['English'] */
 	
 	
-	console.log(valueAccess);
+	//console.log(valueAccess);
+	
+const ages = [3,10,18,20];
+/*function checkAge(age){
+	return age >18;
+};
+const result=ages.find(checkAge);*/
+console.log(ages);
 	
 	
