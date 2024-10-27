@@ -25,10 +25,19 @@
 	 Arabic:50,
  };
  const subjects=[subject1,subject2]
- for (let subject1 of subjects ){
+	const result=subjects.map(mapfunction);
+ function mapfunction(item){
+	 //return [item,item];
+	 const grade=subjectsToGrade(item)
+	console.log(grade)	
+	 
+ };
+	//console.log(result)
+
+/* for (let subject1 of subjects ){
 	 const grade=subjectsToGrade(subject1)
 	console.log(grade);
- };
+ }; */
  function subjectsToGrade(subjets){
 	function NumberToPoint(marks){
 	 let point=0;
@@ -50,13 +59,13 @@
 
 
 let points=0;
-for(let subjects in subject1 ){
-	const subjectName=subject1[subjects];
+for(let subjects in subjets ){
+	const subjectName=subjets[subjects];
 	const x=NumberToPoint(subjectName) 
     
 	points=points+x;
 };
-	const subjectKeys=Object.keys(subject1);
+	const subjectKeys=Object.keys(subjets);
 	const subjectLength=subjectKeys.length;
 	const GPA=points/subjectLength;
 

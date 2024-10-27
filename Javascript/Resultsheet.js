@@ -65,6 +65,9 @@ function PointToGreade(point){
    /* 1. subject er number berkortesi
 	2. akhane x er value hisabe subject er point paitasi
 	3. porboborti point sathe new point add hoitase*/
+	
+	
+	
    for (let subject  in  student) {       
 	   const subjectNumber=student[subject];
 	   const x = numberToPoint(subjectNumber);
@@ -73,7 +76,7 @@ function PointToGreade(point){
 	points=points+x;
      //console.log(x);
 	
-	}
+	} 
    
 	const GPA=points/subjectLength;
      
