@@ -34,15 +34,30 @@ color:green;
 }-->
 .product_Card{
  border:2px solid red;
+ 
  width:300px;
+ 
+ 
+ -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+.logo{
+background-color:yellow;
 }
 .picture{
 
-width:300px
+width:250px;
+height:250px;
 
+
+}
+.img{
+text-align:center;
 }
 .heading3{
 text-align:right;
+margin-right:7px;
 }
 .a{
 width:10px;
@@ -50,9 +65,32 @@ height:10px;
 border:2px solid green;
 display:flex;
 
+border-radius:50px;
+background-color:white;
+
+}
+.b{
+width:10px;
+height:10px;
+border:2px solid green;
+display:flex;
+background-color:black;
+
 border-radius:50px
 
 }
+.c{
+width:10px;
+height:10px;
+border:2px solid green;
+display:flex;
+
+border-radius:50px;
+background-color:white;
+
+
+}
+
 .bor{
 display:flex;
 text-align:right;
@@ -60,22 +98,75 @@ margin-left:37%;
 gap:10px;
 
 }
+.A{
+
+
+width:20px;
+height:20px;
+border:2px solid green;
+display:flex;
+background-color:red;
+
+border-radius:50px
+
+
+}
+.B{
+width:20px;
+height:20px;
+border:2px solid green;
+display:flex;
+background-color:green;
+
+border-radius:50px
+
+
+}
+.C{
+width:20px;
+height:20px;
+border:2px solid green;
+display:flex;
+background-color:yellow;
+
+border-radius:50px
+
+
+}
+.bord{
+display:flex;
+text-align:right;
+margin-left:35%;
+gap:10px;
+
+}
 .text{
-background-color:pink;
+background-color:white;
 }
 .dolar{
 display:flex;
-gap:10px;
-text-align:center;
 text-justify:center;
+text-align:center;
+gap:10px;
 margin-left:20px;
 }
 .add{
 border:2px solid green;
-height:20px;
-margin-top:20px;
+font-size:10px;
+padding-top:10px;
+padding-bottom:10px;
+padding-right:20px;
+padding-left:20px;
+text-align:center;
+text-justify:center;
+margin-top:15px;
 border-radius:5px;
+
 }
+.cart{
+
+}
+
 </style>
 
 
@@ -117,7 +208,7 @@ border-radius:5px;
 <div class="logo">
 <h3 class="heading3">YourLogo</h3>
 
-<div >
+<div class="img">
      <img class="picture" src="https://i.postimg.cc/bNk7LhDD/354873716-606127011649331-1303950734809081250-n.png"
             alt=""
           />
@@ -126,27 +217,30 @@ border-radius:5px;
 <div class="a">
 
 </div>
-<div class="a">
+<div class="b">
 
 </div>
-<div class="a">
+<div class="c">
 
 </div>
 
 </div>
+</div>
+
+
 
 <div class="text">
 <h2>Lorem lpsum</h2>
 <p> loren this product price loren this product price</P>
 
-<div class="bor">
-<div class="a">
+<div class="bord">
+<div class="A">
 
 </div>
-<div class="a">
+<div class="B">
 
 </div>
-<div class="a">
+<div class="C">
 
 </div>
 
@@ -154,12 +248,12 @@ border-radius:5px;
 
 <div class="dolar">
 <h2>$ 75,00</h2>
-<div ><h4 class="add">ADD TO CART</h4></div>
+<div class="cart"><button class="add">ADD TO CART</button></div>
 </div>
 
 
 
-</div>
+
 
 
 
