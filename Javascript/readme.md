@@ -72,3 +72,4 @@
 	3. practics sabek kaj sob golo
 ##	man picture
 	1.https://i.postimg.cc/bNk7LhDD/354873716-606127011649331-1303950734809081250-n.png
+	2.https://i.postimg.cc/6Q9Z4Ngx/pngimg-com-dress-PNG92.png
