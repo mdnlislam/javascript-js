@@ -58,7 +58,7 @@ margin-left:20px;
 
 
 <div class="text">
-<h4>LADIES DRESS</h4>
+<h4 id='dom'>LADIES DRES</h4>
 <h2>Adidas Child Kaptir Super Trail</h2>
 <p>23.88</p>
 
@@ -75,7 +75,26 @@ margin-left:20px;
 
 
 
+<script>
 
+//document.querySelector('h4').style.backgroundColor='red'
+
+//console.log(document.getElementById('dom'));
+ let header=document.getElementById('dom');
+//header.textContent='LADIES DRESS';
+//header.style.fontSize='25px';
+//header.style.color='green';
+//header.style.fontWeight='bold';
+
+// style add system
+
+
+
+//console.log(header.innerHTML);
+header.style.cssText='color:red;font-size:30px;';
+
+
+</script>
 
 </body>
 
