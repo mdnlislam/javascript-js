@@ -62,20 +62,32 @@ margin-left:20px;
 <h2>Adidas Child Kaptir Super Trail</h2>
 <p>23.88</p>
 
+</div>
+</div>
 
+<div class='grandparent'>
+		<h2> grandparent</h2>
+	<div class='parent'>
+	<h3>parent</h3>
+<div class='children'>
+	<h4>children</h4>
+	</div>
+<div class='children2'>
+	<h4>children2</h4>
+</div>
 </div>
 
 
-
-
-
 </div>
-
- 
-
-
 
 <script>
+const grandparent=document.querySelector('.grandparent');
+const children=grandparent.querySelector('.children');
+children.style.color='red';
+console.log(children)
+/*const childrentTwo=children.nextElementSibling;
+childrentTwo.style.color='green';
+console.log(childrentTwo); */
 
 let item=document.getElementsByTagName('div');
 console.log(item);

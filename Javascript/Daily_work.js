@@ -140,3 +140,29 @@ for (let student of students) {
 }
 
 
+
+  /*   daily work
+
+let name; ( it is variable defiend)
+name='rony'; (it is value assignt)
+let name='rony'; (it is variable defiend and value assignt)
+
+kind of data type
+1.String
+2.number
+3.Bigint
+4.boolean
+5.null
+6.undefined
+7.Symbol
+8.Object
+kind of Object
+1.Object
+2.array Object
+
+let name='rakib'; // String
+let roll=246718; // number
+let goodBoy=true; // boolean
+const product={x:24;}; // Object
+const itemList=["BMW","HONDA"] // array object
+
