@@ -81,7 +81,23 @@ margin-left:20px;
 </div>
 
 <script>
-const grandparent=document.querySelector('.grandparent');
+
+const divElement=document.createElement('div');
+divElement.className='red';
+divElement.setAttribute('id','red');
+divElement.setAttribute('title','red div');
+const container=document.querySelector('.grandparent');
+//const h2Element=container.querySelector('h2');
+//container.insertBefore(divElement,h2Element);
+
+container.appendChild(divElement)
+
+console.log(divElement);
+
+
+
+
+/*const grandparent=document.querySelector('.grandparent');
 const children=grandparent.querySelector('.children');
 children.style.color='red';
 console.log(children)
@@ -89,7 +105,7 @@ console.log(children)
 childrentTwo.style.color='green';
 console.log(childrentTwo); */
 
-let item=document.getElementsByTagName('div');
+/*let item=document.getElementsByTagName('div');
 console.log(item);
 
 let items=document.getElementsByClassName('text');
@@ -97,7 +113,7 @@ console.log(items);
 for(let i=0;i<items.length;i++){
 items[i].style.color='red';
 };
-
+*/
 
 
 //document.querySelector('h4').style.backgroundColor='red'
