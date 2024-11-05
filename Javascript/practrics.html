@@ -8,13 +8,13 @@
 <head> 
  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>javascript</title>
+    <title>Responsive Media Example</title>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-	
+    
 	<style>
 
 .Dress_Cart{
@@ -81,8 +81,13 @@ margin-left:20px;
 </div>
 
 <script>
+const clicks=document.querySelector('.grandparent');
+clicks.addEventListener("mousedown", function(){
+   console.log('good morning')
+});
 
-const divElement=document.createElement('div');
+
+/*const divElement=document.createElement('div');
 divElement.className='red';
 divElement.setAttribute('id','red');
 divElement.setAttribute('title','red div');
@@ -92,7 +97,7 @@ const container=document.querySelector('.grandparent');
 
 container.appendChild(divElement)
 
-console.log(divElement);
+console.log(divElement); */
 
 
 
