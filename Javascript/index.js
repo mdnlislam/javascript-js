@@ -1,18 +1,18 @@
-const whatsapp = document.querySelector("h3");
+/*const whatsapp = document.querySelector("h3");
 
 whatsapp.addEventListener("click", function () {
   selector.innerText = "allah";
-});
+}); */
 
-// const produc = document.querySelector("h3");
+ const produc = document.querySelector(".buttom");
 
-// produc.addEventListener("click", function () {
-//   console.log("allah", "click");
-// });
+ /*produc.addEventListener("click", function () {
+   console.log("allah", "click");
+ });*/
 
-// produc.addEventListener("mouseover", function () {
-//   console.log("allah", "mouseover");
-// });
+ produc.addEventListener("mouseover", function () {
+   console.log("allah", "mouseover");
+ });
 
 // const nameWrapper = document.querySelector(".selector-user-name:");
 // function namestter(name) {
