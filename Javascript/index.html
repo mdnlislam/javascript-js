@@ -21,7 +21,7 @@
         gap: 20px;
       }
 
-      .img img {
+      img{
         height: 70px;
         border: 2px solid green;
         border-radius: 50%;
@@ -45,6 +45,7 @@
         width: 400px;
         overflow: scroll;
       }
+	  
     </style>
   </head>
 
@@ -52,7 +53,7 @@
     <div class="main_menu">
       <div class="chat_list">
         <div class="img">
-          <img
+          <img class='A'
             src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
             alt=""
           />
@@ -71,7 +72,7 @@
 
           <div class="img_con">
             <h3>Md.Nurul Islam</h3>
-            <p>assalamu alaikum</p>
+            <p>hello</p>
           </div>
         </div>
 
@@ -83,7 +84,7 @@
 
           <div class="img_con">
             <h3>Md.Rony Mia</h3>
-            <p>assalamu alaikum</p>
+            <p>hi</p>
           </div>
         </div>
 
@@ -95,7 +96,7 @@
 
           <div class="img_con">
             <h3>Md.Asraful</h3>
-            <p>assalamu alaikum</p>
+            <p>Good</p>
           </div>
         </div>
 
@@ -107,7 +108,7 @@
 
           <div class="img_con">
             <h3>Md.Akramul</h3>
-            <p>assalamu alaikum</p>
+            <p>good morning</p>
           </div>
         </div>
 
@@ -119,7 +120,7 @@
 
           <div class="img_con">
             <h3>Md.Jabet</h3>
-            <p>assalamu alaikum</p>
+            <p>Good boy</p>
           </div>
         </div>
       </div>
@@ -127,31 +128,61 @@
       <div class="message">
         <h2>
           Name:
-          <p class="paragraph"></p>
+          <p class="paragraph"></p>  
         </h2>
+		
       </div>
     </div>
-
-    <div>
-      <h1>javascript for loop</h1>
-
-      <p id="demo"></p>
-    </div>
-
-    <div>
-	
-	<button class='buttom'>One Day</button>
-	</div>
-		 
-	
 	
 	<script>
 	
-	const product = document.querySelector(".buttom");
+	const profiles=document.querySelectorAll('.img');
+	const paragraph=document.querySelector('.paragraph');
+	const profileAll=document.querySelector('chat_list');
+	
+	
+	
+	profiles.forEach(function(profile){
+	profile.addEventListener('click',function(){
+	paragraph.innerHTML=profile.innerHTML
+	
+	
+	 profiles.forEach(function(item) {
+      item.style.backgroundColor = '';
+	});
+	profile.style.backgroundColor='green'
+	
+	});
+	
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	/*const profiles = document.querySelectorAll('.img');
+	const name=document.querySelector('.paragraph');
+	const profileName = document.getElementById('profileName');
+      const profileMessage = document.getElementById('profileMessage');
+      const profileImage = document.getElementById('profileImage');
 
- product.addEventListener("mouseover", function () {
-   console.log("allah", "mouseover-2");
- });
+  profiles.forEach((profile) => {
+          profile.addEventListener('click', function () {
+              // প্রোফাইলের ছবি, নাম এবং মেসেজ সংগ্রহ করা
+              const imgSrc = profile.querySelector('img').src;
+              const name = profile.querySelector('h3').innerText;
+              const message = profile.querySelector('p').innerText;
+                profile.style.color='red'
+              // ডান পাশের প্রোফাইল তথ্য আপডেট করা
+              profileImage.src = imgSrc;
+              profileName.innerText = name;
+              profileMessage.innerText = message;
+			  profileMessage.style.color='green'
+          });
+      }); */
 	
 	/*const childrenOne=document.querySelector('.img_con');
 	const childrenTwo=childrenOne.nextElementSibling;
