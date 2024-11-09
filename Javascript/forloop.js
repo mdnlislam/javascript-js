@@ -115,7 +115,7 @@
 				   console.log(person[men]);
 			   }; */
 
-const number =[4,9,16,25];
+/*const number =[4,9,16,25];
 const result=number.map(Math.sqrt);
 console.log(result);
 
@@ -170,4 +170,21 @@ const num1=[45,4,9,16,25];
 for(let y in num1){
 	const resultNum=num1[y];
 	console.log(resultNum);
+}; */
+
+/*	## Loop
+
+    1. for
+    2. while
+    3. Do while
+    4. map
+    5. forEach
+    6. for in
+    7. for of
+    8. for loop decrement */
+
+const product=["BMW","HONDA","TVS","SOZUKI","RUNNER"];
+
+for(i=0;i<5;i++){
+	console.log(product[i]);
 };

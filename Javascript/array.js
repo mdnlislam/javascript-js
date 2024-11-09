@@ -393,5 +393,21 @@ console.log(result); */
     4. find mathode */
 
 const proList=['BMW','HONDA','SOZUKI'];
-const identifyArray=Array.isArray(proList);
-console.log(identifyArray)
+//const identifyArray=Array.isArray(proList);
+proList.unshift("TVS")
+proList.push("RUNNER")
+proList.pop();
+proList.shift();
+delete proList[2];
+
+
+console.log(proList)
+
+
+
+const ages=[7,11,18,35,89];
+function checkAge(age){
+	return age>18;
+};
+const result=ages.find(checkAge);
+console.log(result);

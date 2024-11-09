@@ -97,7 +97,7 @@
 				  
 				  
 				  
-				  let x =0;
+			/*	  let x =0;
 				  let b;
 				  switch(x){
 					case 0:
@@ -142,4 +142,42 @@ switch (new Date().getDay()){
 	
 	
 }
-console.log(text);
+console.log(text); */
+
+/* Condition
+
+    1. if else      
+    2. switch */
+
+
+ let text;
+ switch (new Date().getDay()){
+	 default:
+	 text="looking forward to the weekend";
+	 break;
+	 case 6:
+	 text="Today is Saturday";
+	 break;
+	 case 0:
+	 text="Today is sunday";
+ };
+ console.log(text);
+ 
+ 
+ //if else   
+const time= new Date().getHours();
+let greading;
+if(time<9){
+	greading="good mornig";
+}
+else if(time<12){
+	greading="good evening";
+	
+}
+else{
+	greading="good night";
+	
+};
+
+console.log(greading);
+
