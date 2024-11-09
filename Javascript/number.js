@@ -38,7 +38,7 @@
   //  3. how many types of number/float/integer
 
 	 
-	 let name="rakib";
+/*	 let name="rakib";
 
 
    let nam=Number(name);
@@ -49,4 +49,14 @@ console.log(nam)
  console.log( stringToNumber)
  
  let float = 3.14159;  // floating-point number
- console.log(float)
+ console.log(float) */
+
+  // 1. string to number
+
+  //  3. how many types of number/float/integer
+
+let name='rony';
+let stringToNumber=Number(name);
+let roll='246718';
+let secondStrToNum=Number(roll);
+console.log(stringToNumber,secondStrToNum);

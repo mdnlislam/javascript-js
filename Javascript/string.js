@@ -183,7 +183,7 @@ console.log(typeof toString(text1));
     2. concat (3 ways) */
 	
 	
-	let x =246718;
+	/*let x =246718;
 	let numberToString=x.toString();
 	console.log( numberToString)
 	
@@ -203,8 +203,22 @@ console.log(typeof toString(text1));
 	let result=`${firstName}${lastName}${he}`;
 	
 	console.log(fullName)
-	console.log(result)
+	console.log(result) */
 	
 	
 	
-	
+ /*	1. number to string
+    2. concat (3 ways) */
+
+let x =246714;
+let numberToString=x.toString();
+console.log(numberToString);
+
+let firstName='Md.Nurul';
+let lastName='Islam';
+let He='good boy';
+let fistConcat=(firstName+lastName+He);
+let seconConcat=firstName.concat(lastName,He);
+let thirdConcat=`${firstName}${lastName}${He}`;
+console.log(fistConcat,seconConcat,thirdConcat);
+

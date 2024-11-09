@@ -655,11 +655,33 @@ console.log(product, screen); */
 	
 	//console.log(valueAccess);
 	
-const ages = [3,10,18,20];
+//const ages = [3,10,18,20];
 /*function checkAge(age){
 	return age >18;
 };
 const result=ages.find(checkAge);*/
-console.log(ages);
+//console.log(ages);
 	
 	
+/* 1. typeof object
+    2. object to string
+    3. separet key & valus
+    4. valus access
+    5. valus change or update or add
+    6. property delete*/
+	
+ //object to string
+ const product={
+	 name:'rony',
+	 roll:2467,
+ };
+ const objectToString=JSON.stringify(product);
+ const keyAccess=Object.keys(product);
+ const valueAccess=Object.values(product);
+ const valueAcce=product['roll'];
+ const valueAcc=product['roll']='44444';
+ product['x']='y';
+ delete product['name'];
+ 
+ console.log(product);
+ console.log(objectToString,keyAccess,valueAccess);

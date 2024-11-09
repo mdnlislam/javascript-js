@@ -143,7 +143,7 @@ function subjectsToGrade(subjects) {
     5. boolean to string */
 	
 	
- let x = 456;
+ /*let x = 456;
  let numberToBoolean=Boolean(x);
  console.log(numberToBoolean)
  let y = 0;
@@ -174,4 +174,36 @@ function subjectsToGrade(subjects) {
  
  let heGood=true;
  let BooleanToString=heGood.toString();
- console.log( BooleanToString)
+ console.log( BooleanToString) */
+ 
+ /*## Boolean
+
+    1. valus of Boolean
+    2. number to boolean
+    3. string to boolean - 3ways kora jai
+    4. boolean to number
+    5. boolean to string */
+	
+let roll=246718;
+let numberToBoolean=Boolean(roll);
+let y=0;
+let seconNumToBol=Boolean(y);
+console.log(numberToBoolean,seconNumToBol); 
+
+// string to boolean 
+let A='apple';
+let strToNum=Boolean(A);
+let stToBo=!!A;
+console.log(strToNum,stToBo);
+
+//boolean to number
+let HeGood=true;
+let sheGood=false;
+let BooleanToNumber=Number(HeGood);
+let boolTonum=Number(sheGood);
+console.log(BooleanToNumber,boolTonum);
+
+//boolean to string
+let NiceDay=true;
+let BooleToString= NiceDay.toString();
+console.log(BooleToString);
