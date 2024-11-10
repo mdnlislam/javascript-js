@@ -140,7 +140,7 @@
   
             
 			
-			 const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
+		/*	 const numbers =["A+","B+","c+","F","D","F","A+","C-","F"];
   
    const newResults=[];
    
@@ -172,6 +172,19 @@ function 	checkAdult(age){
 };	
 console.log(filtering);	   
 
-var name="rakib";
-var name="Rony",
-console.log(name)
+var name="rakib"
+var name="Rony"
+console.log(name) */
+
+/* 1. Array Filter
+    2. Array reduce
+    3. date Function
+    4. math function  */
+	
+
+const ages=[32,11,38,9,20];
+const filtering=ages.filter(checkAdult);
+function checkAdult(age){
+	return age>8;
+};
+console.log(filtering)

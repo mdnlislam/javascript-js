@@ -128,7 +128,9 @@
       <div class="message">
         <h2>
           Name:
-          <p class="paragraph"></p>  
+          <div class="paragraph"></div>  
+		  <input type="text" placeholder= "type your message"class="messageInput"/>
+		  <button onclick="sendMessage()">sand</button>
         </h2>
 		
       </div>
@@ -156,7 +158,21 @@
 	
 	});
 	
+	function sendMessage(){
+	const messageInput =document.querySelector(".messageInput");
+	const paragraphContainer  =document.querySelector(".paragraph")
+	// notun akti paragraph make and input value set
+	const newMessage =document.createElemnt("p");
+	newMessage.textConttent=messageInput.value;
+	//new messeg old messeg add kora hosse
+	paragraphContainer.concat(newMessage);
 	
+	//input filt emty kora hosse
+	messageInput.value="";
+	
+	//paragraph.innerHTML=messageInput.value;
+	//messageInput.value="";
+	};
 	
 	
 	

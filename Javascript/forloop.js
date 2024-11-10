@@ -183,8 +183,41 @@ for(let y in num1){
     7. for of
     8. for loop decrement */
 
-const product=["BMW","HONDA","TVS","SOZUKI","RUNNER"];
+//const products=["BMW","HONDA","TVS","SOZUKI","RUNNER"];
 
-for(i=0;i<5;i++){
+/*for(i=0;i<5;i++){
 	console.log(product[i]);
+};*/
+
+/*for(let product of products){
+	
+	console.log(product)
+}; */
+
+//for in
+
+const products={
+	A:'apple',
+	B:'belt',
+	C:'cat',
 };
+for(let product in products ){
+	const result=products[product];
+console.log(result)
+	
+};
+
+// map
+
+const person=[
+{firstname:"malcom",lastname:"Reynolds"},
+{firstname:"Keylee",lastname:"Frye"},
+{firstname:"jayne",lastname:"Cobb"},
+
+];
+const result=person.map(getFullName);
+function getFullName(item){
+	return [item.firstname,item.lastname]
+	
+};
+console.log(result);
