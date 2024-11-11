@@ -77,11 +77,36 @@ margin-left:20px;
 <button class='dom'>good boy</button>
 </div>
 </div>
-
-
 </div>
 
+<form>
+<label>select color:</label><input type="color">
+<label>Number:</label><input type="Number" min="1" max="100" step="5" > <br><br>
+<label>Date:</label><input type="date"><br><br>
+<label>time:</label><input type="time"><br><br>
+<label>Date&time:</label><input type="datetime-local"><br><br>
+<label>Email:</label><input type="Email"><br><br>
+<label>URL:</label><input type="url"><br><br>
+<label>search:</label><input type="search"><br><br>
+
+
+<input type="submit">
+
+
+
+
+
+
+</form>
+
+
 <script>
+
+
+
+
+
+
 const clicks=document.querySelector('.dom');
 clicks.addEventListener("mouseover", function(){
    console.log('good morning')
