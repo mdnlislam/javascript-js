@@ -43,22 +43,54 @@ text-align:center;
 <label>URL:</label><input type="url" placeholder="URL" required><br><br>
 <button>submit</button>
 
+</div>
 
+</form>
 
 </div>
+</form>-->
+
+<!-- type of javascript validation -->
+<div>
+
+<form class="myform">
+<p>Enter an Email Id:</p>
+<input type="email"
+name="email" required="required" class="vali">
+<input type="submit">
 
 
 </form>
 
-
-</div>
-
-
-
-</form>-->
-
-    
+</div>   
 <script>
+const validation=document.querySelector('.vali');
+function validation(textbox){
+if(textbox.value==""){
+textbox.setCustomValidity
+(`Entering an email-id is necessary!`);
+}
+else if(textbox.validity.typemismatch){
+textbox.setCustomValidity
+(`please enter an email address which is valid!);
+}else{
+textbox.setCustomValidity('');
+
+}
+return true;
+};
+
+
+
+
+
+
+
+
+
+
+
+
 /*const LoginForm=document.querySelector('#loginForm');
 LoginForm.addEventListener('submit',(e)=>{
 e.preventDefault();
