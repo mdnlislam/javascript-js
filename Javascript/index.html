@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -126,12 +126,15 @@
       </div>
 
       <div class="message">
-        <h2>
-          Name:
-          <div class="paragraph"></div>  
+        
+      <!-- display message-->
+          <div class="paragraph">
+		  <p><strong>message List:</message></p>
+		  </div> 
+ <!--message input field-->		  
 		  <input type="text" placeholder= "type your message"class="messageInput"/>
 		  <button onclick="sendMessage()">sand</button>
-        </h2>
+        
 		
       </div>
     </div>
@@ -140,7 +143,7 @@
 	
 	const profiles=document.querySelectorAll('.img');
 	const paragraph=document.querySelector('.paragraph');
-	const profileAll=document.querySelector('chat_list');
+	//const profileAll=document.querySelector('chat_list');
 	
 	
 	
@@ -160,7 +163,24 @@
 	
 	
 	
+	// message input and display
 	
+	function sendMessage(){
+	const messageInput=document.querySelector('.messageInput');
+	const message=messageInput.value
+	//console.log(message)
+	
+// message display korar jonno ekta paragraph toiri kra
+const messageDisplay=document.querySelector('.paragraph');
+const newMessage=document.createElement("p");
+newMessage.innerText="message:"+message;
+
+// message display div e message add korar
+messageDisplay.appendChild(newMessage);
+// message display khali kore rakha
+messageInput.value="";
+
+	}
 	
 	
 	

@@ -51,7 +51,7 @@ text-align:center;
 </form>-->
 
 <!-- type of javascript validation -->
-<div>
+<!--<div>
 
 <form class="myform">
 <p>Enter an Email Id:</p>
@@ -62,9 +62,54 @@ name="email" required="required" class="vali">
 
 </form>
 
-</div>   
+</div>  --> 
+
+
+<!-- display message-->
+<div class="messageDisplay">
+<P><strong>message List:</strong></p>
+</div>
+
+<!-- message input field -->
+<input type="text" class="messageInput" placeholder="message input">
+<button onclick="sendMessage()">sand</button>
 <script>
-const validation=document.querySelector('.vali');
+
+function sendMessage(){
+// input field theke message collect kora
+const messageInput=document.querySelector('.messageInput');
+const message=messageInput.value;
+//console.log(message);
+
+// jodi message na thake kichu na kore return korbe
+if(message.trim()==""){
+alert("plz.message wright")
+return;
+}
+
+// message display korar jonno ekta paragraph toiri kora
+
+const messageDisplay=document.querySelector('.messageDisplay');
+newMessage=document.createElement("p");
+newMessage.innerText=message;
+console.log(newMessage)
+// message display div e message add kora
+messageDisplay.appendChild(newMessage)
+
+// input field khali kore rakha
+messageInput.value="";
+
+//console.log(newMessage)
+
+}
+
+
+
+
+
+
+
+/*const validation=document.querySelector('.vali');
 function validation(textbox){
 if(textbox.value==""){
 textbox.setCustomValidity
@@ -78,7 +123,7 @@ textbox.setCustomValidity('');
 
 }
 return true;
-};
+};*/
 
 
 
