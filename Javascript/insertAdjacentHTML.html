@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsertAdjacent HTML</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+<style>
+
+</style>
+</head>
+<body>
+<!--<h2>the insertAdjacentHTML()Method</h2>
+<input type="text" placeholder="text">
+<button onclick="myFunction()">Insert</button>
+<h3 class="myh3">My Header</h3>-->
+<ul class="myList">
+<li>Coffee</li>
+<li>Tea</li>
+</ul>
+<h2>Click "Append" to appent an item to the end of the list:</h2>
+<button onclick="myFunction()">Append</button>
+
+
+<script>
+ function myFunction(){
+//Create an "li" node:
+const node=document.createElement('li');
+//Create a text node:
+const textnode=document.createTextNode("Water");
+
+// Append the text node to the "li" node:
+node.appendChild(textnode);
+const result=document.querySelector('.myList');
+result.appendChild(node);
+
+//console.log(textnode);
+
+}
+
+
+/*function myFunction(){
+const h3= document.querySelector('.myh3');
+let html = "<p>My new paragraph.</p>";
+h3.insertAdjacentHTML("beforeend",html);
+
+
+}*/
+
+</script>
+</body>
+</html>
