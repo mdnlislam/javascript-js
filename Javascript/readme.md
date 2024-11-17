@@ -76,3 +76,7 @@
 	3.https://i.postimg.cc/KznrbH7j/Whats-App-Image-2024-11-04-at-7-09-09-PM.jpg
     4.https://www.freecodecamp.org/news/how-to-submit-a-form-with-javascript/
 	
+	6.Ngrok
+	7.trim
+	8.regex
+	

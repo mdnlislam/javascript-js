@@ -11,150 +11,74 @@
     />
   
     <style>
-    <!-- .form{
-	 width:600px;
-	 height:700px;
-	 border:2px solid green;
-	 } 
-
-.hidden{
-text-align:center;
-text-transform:uppercase;
-}
-
-.table{
-text-align:center;
-} -->
+   .formContainer{
+   width:80%;
+   height:70%;
+   }
 
     </style>
   </head>
 
   <body>
-    
-
-<!--<div class="form">
-
-<h2 class="hidden">html form validation</h2>
-<form>
-<div class="table">
-<label>First Name:</label><input type="text" placeholder="first name" required>
-<label>Last Name:</label><input type="text" placeholder="last name" required><br><br>
-<label>Email:</label><input type="email" placeholder="Email" required>
-<label>URL:</label><input type="url" placeholder="URL" required><br><br>
-<button>submit</button>
-
-</div>
-
-</form>
-
-</div>
-</form>-->
-
-<!-- type of javascript validation -->
-<!--<div>
-
+<div class="formContainer">
 <form class="myform">
-<p>Enter an Email Id:</p>
-<input type="email"
-name="email" required="required" class="vali">
-<input type="submit">
-
-
-</form>
-
-</div>  --> 
-
-
-<!-- display message-->
-<div class="messageDisplay">
-<P><strong>message List:</strong></p>
+<div class="formDetail">
+<label for="name">Name:</label>
+<input type="text" class="name" name="name">
+<div class="errorMessage"></div>
 </div>
 
-<!-- message input field -->
-<input type="text" class="messageInput" placeholder="message input">
-<button onclick="sendMessage()">sand</button>
+<div class="formDetail">
+<label for="email">Email:</label>
+<input type="email" class="email" name="email">
+<div class="errorMessage"></div>
+</div>
+
+<div class="formDetail">
+<label for="password">Password:</label>
+<input type="password" class="password" name="password">
+<div class="errorMessage"></div>
+</div>
+
+
+<div class="formDetail">
+<label for="password">Password:</label>
+<input type="password" class="password" name="password">
+<div class="errorMessage"></div>
+</div>
+
+<div class="formDetail">
+<label for="confirmpassword">Confirmpassword:</label>
+<input type="password" class="confirmpassword" name="confirmpassword">
+<div class="errorMessage"></div>
+</div>
+
+<button class='button' type='submit'>Submit</button>
+
+</form>  
+</div>
+
 <script>
+const myform=document.querySelector('.myform');
+myform.addEventListener('submit',(event)=>{
+event.preventDefault();
+});
 
-function sendMessage(){
-// input field theke message collect kora
-const messageInput=document.querySelector('.messageInput');
-const message=messageInput.value;
-//console.log(message);
+const name=myform.elements.name.value.trim();
+const nameError=document.querySelector('.name + .errorMessage');
+const nameInput=document.querySelector('.name');
+if(name==''){
+nameError.textContent='Name is required.';
+nameInput.parentNode.classList.add('error');
+nameInput.parentNode.classList.remove('success');
 
-// jodi message na thake kichu na kore return korbe
-if(message.trim()==""){
-alert("plz.message wright")
-return;
-}
-
-// message display korar jonno ekta paragraph toiri kora
-
-const messageDisplay=document.querySelector('.messageDisplay');
-newMessage=document.createElement("p");
-newMessage.innerText=message;
-console.log(newMessage)
-// message display div e message add kora
-messageDisplay.appendChild(newMessage)
-
-// input field khali kore rakha
-messageInput.value="";
-
-//console.log(newMessage)
-
-}
-
-
-
-
-
-
-
-/*const validation=document.querySelector('.vali');
-function validation(textbox){
-if(textbox.value==""){
-textbox.setCustomValidity
-(`Entering an email-id is necessary!`);
-}
-else if(textbox.validity.typemismatch){
-textbox.setCustomValidity
-(`please enter an email address which is valid!);
 }else{
-textbox.setCustomValidity('');
-
+nameError.textContent = '';
+      nameInput.parentNode.classList.add('success');
+      nameInput.parentNode.classList.remove('error');
 }
-return true;
-};*/
 
 
-
-
-
-
-
-
-
-
-
-
-/*const LoginForm=document.querySelector('#loginForm');
-LoginForm.addEventListener('submit',(e)=>{
-e.preventDefault();
-const username=document.querySelector('#username');
-const password=document.querySelector('#password');
-if(username.value==""||password.value==""){
-//throw error
-alert("Ensure you input a value in both fields!");
-} else{
-//perform operation with form input
-alert('This form has been successfully submitted!');
-console.log(`this form has a username of ${username.value} and password of ${password.value}`);
-username.value="";
-password.value="";
-}
-}); */
-
-//const myUsername=document.querySelector('.username')
-//console.log(myUsername)
 
 </script>
 	
