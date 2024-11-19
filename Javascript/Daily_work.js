@@ -164,5 +164,33 @@ let name='rakib'; // String
 let roll=246718; // number
 let goodBoy=true; // boolean
 const product={x:24;}; // Object
-const itemList=["BMW","HONDA"] // array object
+const itemList=["BMW","HONDA"] // array object */
 
+
+// daily work
+ let name; // variable defined
+ name='raki'; //value assige kora
+ let A='Apple'; // vriable defiend and value assige kora
+ 
+/* kind of data type
+ 1.String
+ 2.number
+ 3.boolean
+ 4.null
+ 5.undefined
+ 6.Bigint
+ 7.object
+ 8.Symbol
+ 
+ object
+ 1.object
+ 2.array object
+ 
+ 
+ let b='belt'; String
+ let roll=246718;
+ heGoodBoy=true;
+ const product={b:'bat',}; object
+ const ltemName="BMW","HONDA"; array object
+ 
+ */

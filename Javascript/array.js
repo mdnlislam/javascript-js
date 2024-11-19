@@ -392,7 +392,7 @@ console.log(result); */
     3. data update ,delete
     4. find mathode */
 
-const proList=['BMW','HONDA','SOZUKI'];
+/*const proList=['BMW','HONDA','SOZUKI'];
 //const identifyArray=Array.isArray(proList);
 proList.unshift("TVS")
 proList.push("RUNNER")
@@ -410,4 +410,22 @@ function checkAge(age){
 	return age>18;
 };
 const result=ages.find(checkAge);
-console.log(result);
+console.log(result);*/
+
+
+/*## Array Object
+
+    1. how to identify array
+    2. data add,add data start of array,add data end of array,delete data start of array,delete dada end  of array
+    3. data update ,delete
+    4. find mathode */
+	
+const itemname=["BMW","TVS","HONDA"];
+const identifyArray=Array.isArray(itemname);
+itemname.push('RUNNER')
+itemname.unshift('WWW')
+itemname.pop()
+itemname.shift()
+delete itemname[2];
+
+console.log(itemname);

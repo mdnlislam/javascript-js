@@ -55,8 +55,15 @@ console.log(nam)
 
   //  3. how many types of number/float/integer
 
-let name='rony';
+/*let name='rony';
 let stringToNumber=Number(name);
 let roll='246718';
 let secondStrToNum=Number(roll);
-console.log(stringToNumber,secondStrToNum);
+console.log(stringToNumber,secondStrToNum);*/
+
+ 
+ let name='al-amin';
+ let strToNum=Number(name);
+ let roll='246718';
+ let sToN=Number(roll);
+ console.log( typeof sToN);

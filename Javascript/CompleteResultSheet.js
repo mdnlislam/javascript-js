@@ -14,7 +14,7 @@
 12. gpa . ar por 2 digit nibo
 */
 
- const subject1={
+/* const subject1={
 	 bangla:80,
 	 English:80,
 	 Arabic:85,
@@ -38,7 +38,7 @@
 	 const grade=subjectsToGrade(subject1)
 	console.log(grade);
  }; */
- function subjectsToGrade(subjets){
+ /*function subjectsToGrade(subjets){
 	function NumberToPoint(marks){
 	 let point=0;
 	 if(marks>=80){
@@ -88,8 +88,48 @@ function pointToGrade(point){
 }
 const Grade=pointToGrade(GPA);
 	return Grade;
-};
- 
+};*/
 
+
+/*1.first subject number nibo
+  2. number to point ber korbo
+  3.total number to gpa ber korbo
+  4.point to grate ber korbo
+  5. pore dimamic korbo */
+  
+  // subject name and number nibo
+  const student={
+	  bangla:70,
+	  english:65,
+	  arabic:80,
+  };
+  
+  function NumberToPoint(marks){
+	  let point=0;
+	  if(marks>=80){
+		  point=5.0;
+	  }
+	   else if(marks>=70){
+		  point=4.0;
+	  }
+	   else if(marks>=60){
+		  point=3.0;
+	  }
+	   else if(marks>=50){
+		  point=2.0;
+	  }
+	  return point;
+  };
+  //console.log(points)
+  
+        points=0;
+	for(let subject in student){
+	const subjectToNumber=student[subject];
+  const x=NumberToPoint(subjectToNumber)
+		points=points+x;
+	};
+const subjectKeys=Object.keys(student);
+const subjectLength=subjectKeys.length;
+const GPA=points/subjectLength;	
 	
-	
+		console.log(GPA)

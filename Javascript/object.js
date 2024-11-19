@@ -671,7 +671,7 @@ const result=ages.find(checkAge);*/
     6. property delete*/
 	
  //object to string
- const product={
+/*const product={
 	 name:'rony',
 	 roll:2467,
  };
@@ -684,4 +684,28 @@ const result=ages.find(checkAge);*/
  delete product['name'];
  
  console.log(product);
- console.log(objectToString,keyAccess,valueAccess);
+ console.log(objectToString,keyAccess,valueAccess);*/
+ 
+ 
+ /* 1. typeof object
+    2. object to string
+    3. separet key & valus
+    4. valus access
+    5. valus change or update or add
+    6. property delete*/
+	
+	
+	const product={
+		A:'Apple',
+		B:'bat',
+		C:'cat',
+	};
+
+const obToStri=JSON.stringify(product);
+const keys=Object.keys(product);
+const valus=Object.values(product);
+const valueAcce=product['A'];
+ product['A']='add';
+ product['d']='doll';
+ delete product['A'];
+console.log(product)

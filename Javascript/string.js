@@ -210,7 +210,7 @@ console.log(typeof toString(text1));
  /*	1. number to string
     2. concat (3 ways) */
 
-let x =246714;
+ /*let x =246714;
 let numberToString=x.toString();
 console.log(numberToString);
 
@@ -220,5 +220,20 @@ let He='good boy';
 let fistConcat=(firstName+lastName+He);
 let seconConcat=firstName.concat(lastName,He);
 let thirdConcat=`${firstName}${lastName}${He}`;
-console.log(fistConcat,seconConcat,thirdConcat);
+console.log(fistConcat,seconConcat,thirdConcat); */
+
+
+
+
+let roll=246718;
+let numberToString=roll.toString();
+console.log( typeof numberToString)
+let fname='Rony';
+let lname='Mia';
+let fconcat=fname+lname;
+let seconConcat=fname.concat(lname);
+//console.log(seconConcat,fconcat)
+let thirtConcat=`${fname}${lname}`;
+console.log(thirtConcat);
+
 

@@ -1,4 +1,4 @@
-/* Boolean
+ /* Boolean
 
     1. valus of Boolean
     2. number to boolean
@@ -184,7 +184,7 @@ function subjectsToGrade(subjects) {
     4. boolean to number
     5. boolean to string */
 	
-let roll=246718;
+/*let roll=246718;
 let numberToBoolean=Boolean(roll);
 let y=0;
 let seconNumToBol=Boolean(y);
@@ -206,4 +206,40 @@ console.log(BooleanToNumber,boolTonum);
 //boolean to string
 let NiceDay=true;
 let BooleToString= NiceDay.toString();
-console.log(BooleToString);
+console.log(BooleToString); */
+
+
+/*## Boolean
+
+    1. valus of Boolean
+    2. number to boolean
+    3. string to boolean - 3ways kora jai
+    4. boolean to number
+    5. boolean to string */
+	
+	
+	let roll=246718;
+	let numToBool=Boolean(roll);
+	let y=0;
+	let secon=Boolean(y);
+	console.log(numToBool,secon);
+	
+	//string to boolean - 3ways kora jai
+	let name='rony';
+	let strToBlo=Boolean(name);
+	let sToB=!!name;
+	console.log(strToBlo,sToB);
+	
+	//boolean to number
+  let goodBoy=true;
+  let botoNum=Number(goodBoy);
+  let goodGirl=false;
+  let BtoN=Number(goodGirl);
+  console.log(botoNum,BtoN)
+  
+  //boolean to string
+  let he=true;
+  let bTos=he.toString();
+  console.log( typeof bTos);
+	
+	
