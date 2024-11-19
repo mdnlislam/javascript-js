@@ -74,7 +74,13 @@
 		
 		
 		                    console.log(greadFilter); */
-						 
+			/*	const gradings=["A+","B+","C+","A+","F+","F+","A+","C+",];
+				const gradeFilter=gradings.filter(function(grade){
+					if(grade==="A+" || grade==="B+" || grade==="C+" || grade==="B-" || grade==="D+" ){
+						return true;
+					}
+				});
+						console.log(gradeFilter) 
 						 
 						 
 						 	 
@@ -93,7 +99,13 @@
 		
 		                    console.log(greadFilter); */
 						 
-						 
+				const greadings=["A+","B+","A+","C+","F","D","F","C-"];
+                 const gradeFilter=greadings.filter(function(grade){
+					 if(grade!=="F"){
+						 return true;
+					 }
+				 });	
+               console.log(	gradeFilter)			 
 						 
 						 
 						 
@@ -182,9 +194,17 @@ console.log(name) */
     4. math function  */
 	
 
-const ages=[32,11,38,9,20];
+/*const ages=[32,11,38,9,20];
 const filtering=ages.filter(checkAdult);
 function checkAdult(age){
 	return age>8;
 };
+console.log(filtering)*/
+
+const ages=[34,11,38,50];
+const filtering=ages.filter(checkAdult);
+function checkAdult(age){
+	return age>20;
+}
 console.log(filtering)
+

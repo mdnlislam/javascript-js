@@ -104,7 +104,21 @@ const Grade=pointToGrade(GPA);
 	  arabic:80,
   };
   
-  function NumberToPoint(marks){
+    const student1={
+	  bangla:50,
+	  english:50,
+	  arabic:50,
+  };
+  
+const students=[student,student1];
+for(let student of students ){
+ const grade=subjectTograde(student)
+ console.log(grade)
+	
+//console.log(student)
+};
+  function subjectTograde(subjects){
+	  function NumberToPoint(marks){
 	  let point=0;
 	  if(marks>=80){
 		  point=5.0;
@@ -124,12 +138,33 @@ const Grade=pointToGrade(GPA);
   
         points=0;
 	for(let subject in student){
-	const subjectToNumber=student[subject];
+	const subjectToNumber=subjects[subject];
   const x=NumberToPoint(subjectToNumber)
 		points=points+x;
 	};
-const subjectKeys=Object.keys(student);
+const subjectKeys=Object.keys(subjects);
 const subjectLength=subjectKeys.length;
 const GPA=points/subjectLength;	
 	
-		console.log(GPA)
+		//console.log(GPA)
+let grade='';
+function pointToGrade(point){
+	if(point>=5.00){
+		grade='A+';
+	}
+	else if(point>=4.00){
+		grade='B+';
+	}
+	else if (point>=3.00){
+		grade='C+';
+	}
+	else if (point>=2.00){
+		grade='D';
+	}
+	return grade;
+};
+const Grade=pointToGrade(GPA)
+//console.log(Grade);
+     return Grade;
+  };
+  
