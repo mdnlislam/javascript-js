@@ -75,6 +75,8 @@
 	2.https://i.postimg.cc/6Q9Z4Ngx/pngimg-com-dress-PNG92.png
 	3.https://i.postimg.cc/KznrbH7j/Whats-App-Image-2024-11-04-at-7-09-09-PM.jpg
     4.https://www.freecodecamp.org/news/how-to-submit-a-form-with-javascript/
+## man picture
+   1.https://i.postimg.cc/FzbFZVbL/IMG-20221114-114046.jpg
 	
 	6.Ngrok
 	7.trim
