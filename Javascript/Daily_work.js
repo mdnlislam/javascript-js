@@ -194,3 +194,36 @@ const itemList=["BMW","HONDA"] // array object */
  const ltemName="BMW","HONDA"; array object
  
  */
+ 
+ 
+ /*
+ Daily work
+ 1.let name;  variable defiend kora 
+ 2. name='Rony'; value assige kora
+ 3. let name='Rohlamin"; variable defiend and value assig kora
+   
+   type object
+   1. String
+   2. boolean
+   3. number
+   4. Bigint
+   5. undefined
+   6. null
+   7. object
+   8. Symbol
+   // object
+   1.object
+   2.array object
+   
+   * let name='Rony'; // strig
+   * let roll=246718; // number
+   * let heGood=true;
+   * const product{
+	   A='Apple',
+	   roll=2356;
+   };
+   *const itemList["BMW","TVS","HONDA"];
+   
+   
+   
+ */

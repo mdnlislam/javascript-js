@@ -62,8 +62,24 @@ let secondStrToNum=Number(roll);
 console.log(stringToNumber,secondStrToNum);*/
 
  
- let name='al-amin';
+/* let name='al-amin';
  let strToNum=Number(name);
  let roll='246718';
  let sToN=Number(roll);
- console.log( typeof sToN);
+ console.log( typeof sToN);*/
+ 
+ 
+ // ## Number
+
+   // 1. string to number
+
+  //  3. how many types of number/float/integer
+  
+  
+  let name="Rakib";
+  let stringToNumber=Number(name);
+  console.log(stringToNumber);
+  let roll='246718';
+  let strToNum=Number(roll);
+  console.log(strToNum);
+  

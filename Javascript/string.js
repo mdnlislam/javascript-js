@@ -225,7 +225,7 @@ console.log(fistConcat,seconConcat,thirdConcat); */
 
 
 
-let roll=246718;
+/*let roll=246718;
 let numberToString=roll.toString();
 console.log( typeof numberToString)
 let fname='Rony';
@@ -234,6 +234,23 @@ let fconcat=fname+lname;
 let seconConcat=fname.concat(lname);
 //console.log(seconConcat,fconcat)
 let thirtConcat=`${fname}${lname}`;
-console.log(thirtConcat);
+console.log(thirtConcat);*/
+
+/*	1. number to string
+    2. concat (3 ways) */
+
+
+let roll=246718;
+
+let NumToStr=roll.toString();
+console.log( typeof NumToStr);
+let A='Apple';
+let B='Belt';
+let C='Cat';
+
+let firstConcat=A+B+C;
+let seconCon=A.concat(B,C);
+let thirdConcat=`${A}${B}${C}`;
+console.log(firstConcat,seconCon,thirdConcat);
 
 

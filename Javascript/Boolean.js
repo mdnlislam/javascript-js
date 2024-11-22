@@ -218,7 +218,7 @@ console.log(BooleToString); */
     5. boolean to string */
 	
 	
-	let roll=246718;
+/*	let roll=246718;
 	let numToBool=Boolean(roll);
 	let y=0;
 	let secon=Boolean(y);
@@ -240,6 +240,28 @@ console.log(BooleToString); */
   //boolean to string
   let he=true;
   let bTos=he.toString();
-  console.log( typeof bTos);
+  console.log( typeof bTos); */
 	
 	
+	/*## Boolean
+
+    1. valus of Boolean
+    2. number to boolean
+    3. string to boolean - 3ways kora jai
+    4. boolean to number
+    5. boolean to string */
+	
+	
+	let roll=246718;
+	let numToBool=Boolean(roll);
+	let x=0;
+	let nToB=Boolean(x);
+	console.log(numToBool,nToB);
+	
+ //string to boolean - 3ways kora jai
+ 
+ let name='rakib';
+ let strToBool=Boolean(name);
+ let A='Apple';
+ let stToBo=!!A;
+ console.log(strToBool,stToBo);
