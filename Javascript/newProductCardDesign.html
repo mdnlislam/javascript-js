@@ -13,6 +13,7 @@
 .project{
 border:2px solid green;
 width:700px;
+height:710px;
 background-color:#2344;
 }
 .img{
@@ -42,11 +43,13 @@ align-items: center;
 }
 .manu_ber{
 border:2px solid red;
-width:120px;
+width:130px;
 text-align:center;
 background-color:black;
-
-
+color:white;
+position:absolute;
+top:6px;
+display:;
 }
 .menu_item li{
 list-style-type: none;
@@ -81,7 +84,12 @@ text-align:center;
 .hidding{
 color:white;
 }
-
+.bars{
+position:relative;
+}
+.bars:hover .manu_ber{
+display:block;
+}
 </style>
 <body>
 <div class='project'>
@@ -91,7 +99,7 @@ color:white;
    <div class='navbar'>
 
        <div class='logo'>
-	      <a href='#'><i class="fa-solid fa-bars"></i></a>
+	      <a class='bars' href='#'><i class="fa-solid fa-bars"></i></a>
 	       <div class='menu'>
 		       <img class='img' src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
                alt=""/>
@@ -166,16 +174,27 @@ color:white;
 					      <a href='#'>Settings</a>
 						  
 					   </div>
-				   </li>
-				   
-				   
-			     
-			      
-			      
+				   </li>   
 			      
 			  </ul>
 
-
+              <div class='input_range'>
+			     <h4>You've remaining<h4>
+				   <form>
+                    <p>KEYWORDS</p><input type="number" name="amountInput1" min="0" max="20" value="0" oninput="this.form.amountRange1.value=this.value" />
+                     <input type="range" name="amountRange1" min="0" max="20" value="0" oninput="this.form.amountInput1.value=this.value" />
+					 
+					   <p>PROJECTS</p><input type="number" name="amountInput2" min="0" max="20" value="0" oninput="this.form.amountRange2.value=this.value" />
+                     <input type="range" name="amountRange2" min="0" max="20" value="0" oninput="this.form.amountInput2.value=this.value" />
+					 
+                    </form>
+					
+					  
+			          
+			  </div>
+			  
+			  
+			  
          </div>
 
 

@@ -265,3 +265,19 @@ console.log(BooleToString); */
  let A='Apple';
  let stToBo=!!A;
  console.log(strToBool,stToBo);
+ 
+ //boolean to number
+ let heGood=true;
+ let BoToNum=Number(heGood)
+ let sheGood=false;
+ let bToN=Number(sheGood);
+ console.log(  bToN);
+ 
+ //boolean to string
+ 
+ let he=true;
+ let she=false;
+ let boolToSTRIn=he.toString();
+ console.log( typeof boolToSTRIn);
+ let bToS=she.toString(she);
+ console.log(bToS);
