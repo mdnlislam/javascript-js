@@ -19,7 +19,7 @@ background-color:#2344;
 .img{
   width:40px;
   height:40px;
-  border:2px solid red;
+  border:;
   border-radius:50%;
 }
 .logo{
@@ -42,14 +42,14 @@ align-items: center;
 
 }
 .manu_ber{
-border:2px solid red;
+border:;
 width:130px;
 text-align:center;
 background-color:black;
 color:white;
 position:absolute;
 top:6px;
-display:;
+display:none;
 }
 .menu_item li{
 list-style-type: none;
@@ -67,7 +67,7 @@ text-align:center;
 
 }
 .menu_item{
-border:2px solid yellow;
+border:;
 margin:00px;
 padding:00px;
 text-align:center;
@@ -205,6 +205,15 @@ display:block;
 
 
 </div>
+<script>
+const moushover=document.querySelector('.bars');
+const HTML=document.querySelector('.manu_ber');
+moushover.addEventListener('click',()=>{
+   moushover.innerHTML=HTML.innerHTML
+   HTML.style.display='inline-grid';
+});
+
+</script>
 </body>
 
 </html>
