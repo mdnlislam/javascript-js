@@ -11,134 +11,41 @@
     />
 
     <style>
-      .Empty_project {
-        border: 2px solid green;
-        height: 513px;
-        width: 700px;
-        position: relative;
-      }
-      .Navbar {
-        display: flex;
-        justify-content: space-between;
-      }
-      img {
-        width: 30px;
-        height: 30px;
-        border: 2px solid green;
-        border-radius: 50%;
-      }
-      .logo {
-        display: flex;
-        gap: 10px;
-      }
-      .logo_con {
-        display: flex;
-        gap: 10px;
-      }
-      .logo_Icon {
-      }
-      .hidding {
-        margin-top: -1px;
-      }
-      ankor_tag,
-      li {
-        list-style-type: none;
-      }
-      .ankor_tag {
-        margin: 0px;
-        padding: 0px;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      .range {
-        margin-top: 20%;
-      }
-      .manu_bar {
-        border: 2px solid red;
-        width: 140px;
-        text-align: center;
-        color: white;
-        background-color: black;
-        position: absolute;
-        top: 00px;
-      }
-      .projects {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 40px;
-        margin-right: -15%;
-      }
-      .projects {
-        background-color: #7645;
-        height: 477px;
-        width: 660px;
-      }
-      .fa-angle-down {
-        color: black;
-      }
+     
     </style>
   </head>
 
   <body>
-    <div class="Empty_project">
-      <div class="Navbar">
-        <div class="manu">
-          <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
-        <div class="logo">
-          <img
-            src="https://res.cloudinary.com/dnhpk5q85/image/upload/v1716914477/social%20icons/lvvx1nqo7wwabm9t9wog.png"
-            alt=""
-          />
-          <div class="logo_con">
-            <h3 class="hidding">Zawwad</h3>
-            <div class="logo_Icon">
-              <a href="#"> <i class="fa-solid fa-angle-down"></i></a>
-            </div>
-          </div>
-        </div>
-       </div>
-
-      <div class="projects">
-        <h2>Projects</h2>
-        <div><p>+ Create a new projects</p></div>
-      </div>
-      <div>
-        <p>
-          Currently you don't have any projects.Let's Create a project and start
-          your joureny with BizReply
-        </p>
-      </div>
-      <div class="manu_bar">
-        <h2>BizReply.Co</h2>
-        <div class="menu_Item">
-          <ul class="ankor_tag">
-            <li><a href="#">projects</a></li>
-            <br />
-            <li><a href="#">Keywords</a></li>
-            <br />
-            <li><a href="#">Mentions</a></li>
-            <br />
-            <li><a href="#">Replies</a></li>
-            <br />
-            <li><a href="#">Reports</a></li>
-            <br /><br />
-            <li><a href="#">Setting</a></li>
-          </ul>
-        </div>
-
-        <div class="range">
-          <h2>you've remining</h2>
-          <label for="#">Keyworce</label><br />
-          <input type="range" /><br />
-          <label for="#">projects</label><br />
-          <input type="range" /><br />
-          <label for="#">Replies</label><br />
-          <input type="range" />
-        </div>
-      </div>
-    </div>
+   <h2>Javascript Validation</h2>
+  <p>Enter a number and click ok:</p>
+  <form>
+ 
+  <input type='number' id='id1' min='100'>
+  <button onclick='myfunction()'>OK</button>
+  
+  </form>
+   <p id='demo'></p>
+  
+  <script>
+  function myfunction(){
+  let text;
+  const input=document.querySelector('#id1')
+  input.style.color='red';
+  if(input.validity.rangeUnderflow){
+    text='Value too small';
+  }
+   else{
+  text='Input Ok';
+  }
+  
+ const output=document.querySelector('#demo');
+  output.innerHTML=text;
+  }
+ 
+  
+  
+  
+  
+  </script>
   </body>
 </html>
