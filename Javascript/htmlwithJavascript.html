@@ -16,7 +16,7 @@
   </head>
 
   <body>
-   <h2>Javascript Validation</h2>
+  <!-- <h2>Javascript Validation</h2>
   <p>Enter a number and click ok:</p>
   <form>
  
@@ -24,10 +24,46 @@
   <button onclick='myfunction()'>OK</button>
   
   </form>
+   <p id='demo'></p> -->
+   
+   <p>Enter a number and click OK:</p>
+   
+<input type='number' id='id1' min='150' required>
+<button onclick="myfunction()">OK</button>
+   
    <p id='demo'></p>
+   
+   
   
   <script>
-  function myfunction(){
+  let text;
+ function  myfunction(){
+ 
+ const input=document.querySelector('#id1');
+ if(!input.checkValidity()){
+ text='plz. input value';
+ }
+ else {
+ text='input Ok';
+ }
+ 
+ const output=document.querySelector('#demo');
+ output.innerHTML=text;
+ 
+ 
+ }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ /* function myfunction(){
   let text;
   const input=document.querySelector('#id1')
   input.style.color='red';
@@ -40,7 +76,7 @@
   
  const output=document.querySelector('#demo');
   output.innerHTML=text;
-  }
+  }*/
  
   
   

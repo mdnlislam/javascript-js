@@ -11,16 +11,16 @@
     />
   
     <style>
-   .formContainer{
+  <!-- .formContainer{
    width:80%;
    height:70%;
-   }
+   }-->
 
     </style>
   </head>
 
   <body>
-<div class="formContainer">
+<!--<div class="formContainer">
 <form class="myform">
 <div class="formDetail">
 <label for="name">Name:</label>
@@ -56,10 +56,36 @@
 <button class='button' type='submit'>Submit</button>
 
 </form>  
-</div>
+</div> -->
+<h2>javascript</h2>
+<p id='demo'></p>
+
+<button onclick='myfunction()'>Try it</button>
+<p class='demo'>please visit Microsoft!</p>
 
 <script>
-const myform=document.querySelector('.myform');
+function myfunction(){
+const text=document.querySelector('.demo').innerHTML;
+const output=document.querySelector('.domo')
+output.innerHTML=text.replace('Microsoft','W3Schools');
+
+}
+
+
+
+
+let text='Visit  W3Schools!';
+let n=text.search(/w3Schools/i);
+const output=document.querySelector('#demo');
+output.innerHTML=n;
+
+
+
+
+
+
+
+/*const myform=document.querySelector('.myform');
 myform.addEventListener('submit',(event)=>{
 event.preventDefault();
 });
@@ -76,7 +102,7 @@ nameInput.parentNode.classList.remove('success');
 nameError.textContent = '';
       nameInput.parentNode.classList.add('success');
       nameInput.parentNode.classList.remove('error');
-}
+} */
 
 
 
