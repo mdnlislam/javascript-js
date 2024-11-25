@@ -82,3 +82,6 @@
 	7.trim
 	8.regex
 	
+## regex link
+ 1.https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+	

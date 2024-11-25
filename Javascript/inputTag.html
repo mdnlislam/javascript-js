@@ -57,27 +57,41 @@
 
 </form>  
 </div> -->
-<h2>javascript</h2>
-<p id='demo'></p>
+<!--<h2>javascript</h2>
+<p id='demo'></p>-->
 
-<button onclick='myfunction()'>Try it</button>
-<p class='demo'>please visit Microsoft!</p>
+<button onclick="myfunction()">Try it</button>
+<p id="demo">Please visit Microsoft! </p>
+
+<p id="p01">the best things in life are free!</p>
+<p class='demo'></p>
+
+
+
 
 <script>
+const text1=document.querySelector('#p01').innerHTML;
+const pattern=/o/;
+const output=document.querySelector('.demo')
+output.innerHTML=pattern.test(text1);
+
+
+
 function myfunction(){
-const text=document.querySelector('.demo').innerHTML;
-const output=document.querySelector('.domo')
-output.innerHTML=text.replace('Microsoft','W3Schools');
+const text=document.querySelector('#demo').innerHTML;
+const output=document.querySelector('#demo');
+output.innerHTML=text.replace("Microsoft","W3Schools");
+
 
 }
 
 
 
 
-let text='Visit  W3Schools!';
+/*let text='Visit  W3Schools!';
 let n=text.search(/w3Schools/i);
 const output=document.querySelector('#demo');
-output.innerHTML=n;
+output.innerHTML=n;*/
 
 
 
