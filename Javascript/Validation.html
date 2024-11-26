@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Media Example</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  
+<style>
+
+
+</style>
+</head>
+
+<body>
+<h2>Email regex Validation</h2>
+<form>
+<input type='text' id='text' placeholder='Email'>
+<button onclick='validate()' type='button'>Submit</button>
+
+
+</form>
+
+
+<script>
+function validate(){
+const mail=document.querySelector('#text').value;
+const regex=/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+if(regex.test(mail)){
+alert('you provided a valid Email Id')
+ return true;
+}
+else{
+alert('sorry ! 	Incorrect Email Id')
+return false;
+}
+}
+
+</script>
+</body>
+
+</html>
