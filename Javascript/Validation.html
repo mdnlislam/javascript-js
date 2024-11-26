@@ -11,7 +11,7 @@
     />
   
 <style>
-
+ 
 
 </style>
 </head>
@@ -19,25 +19,30 @@
 <body>
 <h2>Email regex Validation</h2>
 <form>
-<input type='text' id='text' placeholder='Email'>
-<button onclick='validate()' type='button'>Submit</button>
-
+<input type='text' name='email' class='demo1' onclick='myfunctiom()' placeholder='Enter Email address'/> <br>
+<input type='password' name='password' class='demo2' onclick='myfunctiom()' placeholder='Enter password'/><br>
+<input type='submit' value='submit'/>
 
 </form>
-
+<p class='message'>Message Me:</p>
 
 <script>
-function validate(){
-const mail=document.querySelector('#text').value;
-const regex=/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-if(regex.test(mail)){
-alert('you provided a valid Email Id')
- return true;
+function myfunctiom(){
+const emailInput=document.querySelector('.demo1').value;
+const passwordInput=document.querySelector('.demo2').value;
+
+// Email regex pattern
+const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const passwordPattern=/^\d{11}$;
+
+// Validate Email
+if(!emailPattern.test(emailInput)){
+     console.log('plz Enter Email address');
+	 return false;
 }
-else{
-alert('sorry ! 	Incorrect Email Id')
-return false;
-}
+
+
+return true;
 }
 
 </script>
