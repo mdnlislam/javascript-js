@@ -37,20 +37,34 @@ const passwordInput=document.querySelector('.demo2').value;
  
 const Regexemail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 const RegexPass=/^\d{4}/;
+
+
+ let valid='';
 if(Regexemail.test(EmailInput)){
 
-alert('thanks')
+valid='Email ok';
 }
 else{
-alert('no')
+valid='Plz. Enter Email';
 }
 if(RegexPass.test(passwordInput)){
-alert('ok')
+valid='password ok';
 
 }
 else{
-alert('not k')
+valid='plz.Enter a password';
 }
+
+if(Regexemail.test(EmailInput)&& RegexPass.test(passwordInput)){
+valid='Submit Ok';
+}
+
+const outputMessage=document.querySelector('.message');
+outputMessage.innerHTML=valid;
+
+
+
+
 
 return true;
 
