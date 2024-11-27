@@ -18,32 +18,49 @@
 
 <body>
 <h2>Email regex Validation</h2>
-<form>
-<input type='text' name='email' class='demo1' onclick='myfunctiom()' placeholder='Enter Email address'/> <br>
-<input type='password' name='password' class='demo2' onclick='myfunctiom()' placeholder='Enter password'/><br>
-<input type='submit' value='submit'/>
+<form onsubmit='myfunctiom(event)'>
+<input type='text' name='email' class='demo1' placeholder='Enter Email address'/> <br>
+<input type='password' name='password' class='demo2' placeholder='Enter password'/><br>
+<button type='submit'>submit</button>
 
 </form>
 <p class='message'>Message Me:</p>
 
 <script>
-function myfunctiom(){
-const emailInput=document.querySelector('.demo1').value;
+
+function myfunctiom(event){
+ event.preventDefault();
+ 
+ const EmailInput=document.querySelector('.demo1').value;
 const passwordInput=document.querySelector('.demo2').value;
 
-// Email regex pattern
-const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const passwordPattern=/^\d{11}$;
+ 
+const Regexemail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+const RegexPass=/^\d{4}/;
+if(Regexemail.test(EmailInput)){
 
-// Validate Email
-if(!emailPattern.test(emailInput)){
-     console.log('plz Enter Email address');
-	 return false;
+alert('thanks')
 }
+else{
+alert('no')
+}
+if(RegexPass.test(passwordInput)){
+alert('ok')
 
+}
+else{
+alert('not k')
+}
 
 return true;
+
 }
+
+
+console.log(EmailInput,passwordInput);
+
+
+
 
 </script>
 </body>
