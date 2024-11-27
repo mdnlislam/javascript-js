@@ -18,7 +18,7 @@
 
 <body>
 <h2>Email regex Validation</h2>
-<form onsubmit='myfunctiom(event)'>
+<form onsubmit='myfunction(event)'>
 <input type='text' name='email' class='demo1' placeholder='Enter Email address'/> <br>
 <input type='password' name='password' class='demo2' placeholder='Enter password'/><br>
 <button type='submit'>submit</button>
@@ -28,7 +28,7 @@
 
 <script>
 
-function myfunctiom(event){
+function myfunction(event){
  event.preventDefault();
  
  const EmailInput=document.querySelector('.demo1').value;
@@ -45,7 +45,7 @@ if(Regexemail.test(EmailInput)){
 valid='Email ok';
 }
 else{
-valid='Plz. Enter Email';
+valid='Plz. Enter Email'
 }
 if(RegexPass.test(passwordInput)){
 valid='password ok';
