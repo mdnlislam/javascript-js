@@ -20,11 +20,12 @@
 <h2>Email regex Validation</h2>
 <form onsubmit='myfunction(event)'>
 <input type='text' name='email' class='demo1' placeholder='Enter Email address'/> <br>
+<p class='email'></p>
 <input type='password' name='password' class='demo2' placeholder='Enter password'/><br>
 <button type='submit'>submit</button>
 
 </form>
-<p class='message'>Message Me:</p>
+<p class='message'></p>
 
 <script>
 
@@ -38,18 +39,24 @@ const passwordInput=document.querySelector('.demo2').value;
 const Regexemail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 const RegexPass=/^\d{4}/;
 
-
+let email='';
  let valid='';
 if(Regexemail.test(EmailInput)){
 
-valid='Email ok';
+email='Email ok';
+}
+else if( !Regexemail.test(EmailInput)){
+email='Email worng !';
 }
 else{
-valid='Plz. Enter Email'
+email='Plz. Enter Email'
 }
 if(RegexPass.test(passwordInput)){
 valid='password ok';
 
+}
+else if(!RegexPass.test(passwordInput)){
+valid='plz.Enter a min.4 digit password';
 }
 else{
 valid='plz.Enter a password';
@@ -61,8 +68,10 @@ valid='Submit Ok';
 
 const outputMessage=document.querySelector('.message');
 outputMessage.innerHTML=valid;
-
-
+const outputEmail=document.querySelector('.email');
+outputEmail.innerHTML=email;
+outputEmail.style.color='red';
+outputMessage.style.color='green';
 
 
 
