@@ -41,25 +41,28 @@ const RegexPass=/^\d{4}/;
 
 let email='';
  let valid='';
-if(Regexemail.test(EmailInput)){
+ 
+ 
 
-email='Email ok';
+if(!EmailInput){
+
+email='Plz. Enter Email!';
 }
-else if( !Regexemail.test(EmailInput)){
-email='Email worng !';
+else if(Regexemail.test(EmailInput)){
+email='Email Ok';
 }
 else{
-email='Plz. Enter Email'
+email='worng Email!'
 }
-if(RegexPass.test(passwordInput)){
-valid='password ok';
-
-}
-else if(!RegexPass.test(passwordInput)){
-valid='plz.Enter a min.4 digit password';
-}
-else{
+if(!passwordInput){
 valid='plz.Enter a password';
+
+}
+else if(RegexPass.test(passwordInput)){
+valid='Password OK';
+}
+else{
+valid='plz.Enter a 4 digits password';
 }
 
 if(Regexemail.test(EmailInput)&& RegexPass.test(passwordInput)){
@@ -70,9 +73,39 @@ const outputMessage=document.querySelector('.message');
 outputMessage.innerHTML=valid;
 const outputEmail=document.querySelector('.email');
 outputEmail.innerHTML=email;
-outputEmail.style.color='red';
-outputMessage.style.color='green';
 
+const Em=[outputEmail,outputMessage]
+for(let eee of Em ){
+if(eee.innerHTML==='Plz. Enter Email!'){
+eee.style.color='black';
+}
+if(eee.innerHTML==='Email Ok'){
+eee.style.color='green';
+}
+if(eee.innerHTML==='worng Email!'){
+eee.style.color='red';
+}
+
+
+// password
+
+
+if(eee.innerHTML==='plz.Enter a password'){
+eee.style.color='black';
+}
+if(eee.innerHTML==='Password OK'){
+eee.style.color='green';
+}
+
+if(eee.innerHTML==='plz.Enter a 4 digits password'){
+eee.style.color='red';
+}
+
+
+console.log( eee);
+
+
+}
 
 
 return true;
@@ -80,7 +113,7 @@ return true;
 }
 
 
-console.log(EmailInput,passwordInput);
+
 
 
 
