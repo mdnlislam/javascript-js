@@ -19,13 +19,15 @@
 <body>
 <h2>Email regex Validation</h2>
 <form onsubmit='myfunction(event)'>
-<input type='text' name='email' class='demo1' placeholder='Enter Email address'/> <br>
+<input type='text' name='email' class='demo1' placeholder='Enter Email address'/><br>
 <p class='email'></p>
 <input type='password' name='password' class='demo2' placeholder='Enter password'/><br>
+<p class='password'></p>
+
 <button type='submit'>submit</button>
 
 </form>
-<p class='message'></p>
+<p class='submit'></p>
 
 <script>
 
@@ -40,48 +42,50 @@ const Regexemail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 const RegexPass=/^\d{4}/;
 
 let email='';
- let valid='';
+ let password='';
+ let Submit='';
  
- 
+ if(!EmailInput){
+ email='Error';
+ }
 
-if(!EmailInput){
-
-email='Plz. Enter Email!';
-}
-else if(Regexemail.test(EmailInput)){
-email='Email Ok';
-}
-else{
+else if(!Regexemail.test(EmailInput)){
 email='worng Email!'
 }
+
+// password
+
 if(!passwordInput){
-valid='plz.Enter a password';
+password='Error';
+}
+
+else if(!RegexPass.test(passwordInput)){
+password='plz.Enter a 4 digits password';
 
 }
-else if(RegexPass.test(passwordInput)){
-valid='Password OK';
-}
-else{
-valid='plz.Enter a 4 digits password';
-}
+
 
 if(Regexemail.test(EmailInput)&& RegexPass.test(passwordInput)){
-valid='Submit Ok';
+Submit='Submit Ok';
 }
 
-const outputMessage=document.querySelector('.message');
-outputMessage.innerHTML=valid;
+
+/*else if(Regexemail.test(EmailInput) || RegexPass.test(passwordInput)){
+Submit='Submit Error';
+} */
+
+const outputMessage=document.querySelector('.password');
+outputMessage.innerHTML=password;
 const outputEmail=document.querySelector('.email');
 outputEmail.innerHTML=email;
+const submitOutput=document.querySelector('.submit');
+submitOutput.innerHTML=Submit;
+//console.log(submitOutput)
 
-const Em=[outputEmail,outputMessage]
+
+const Em=[outputEmail,outputMessage,submitOutput]
 for(let eee of Em ){
-if(eee.innerHTML==='Plz. Enter Email!'){
-eee.style.color='black';
-}
-if(eee.innerHTML==='Email Ok'){
-eee.style.color='green';
-}
+
 if(eee.innerHTML==='worng Email!'){
 eee.style.color='red';
 }
@@ -89,15 +93,13 @@ eee.style.color='red';
 
 // password
 
-
-if(eee.innerHTML==='plz.Enter a password'){
-eee.style.color='black';
+if(eee.innerHTML==='plz.Enter a 4 digits password'){
+eee.style.color='red';
 }
-if(eee.innerHTML==='Password OK'){
+if(eee.innerHTML==='Submit Ok'){
 eee.style.color='green';
 }
-
-if(eee.innerHTML==='plz.Enter a 4 digits password'){
+if(eee.innerHTML==='Submit Error'){
 eee.style.color='red';
 }
 
