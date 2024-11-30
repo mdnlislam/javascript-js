@@ -85,4 +85,5 @@
 ## regex link
  1.https://www.w3schools.com/jsref/jsref_obj_regexp.asp
  2.https://i.postimg.cc/3xKcVbLC/Whats-App-Image-2024-11-30-at-10-43-01-AM.jpg
+ 3.https://i.postimg.cc/7hkd2FBd/Whats-App-Image-2024-12-01-at-12-25-49-AM.jpg
 	
