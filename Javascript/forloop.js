@@ -196,7 +196,7 @@ for(let y in num1){
 
 //for in
 
-const products={
+/*const products={
 	A:'apple',
 	B:'belt',
 	C:'cat',
@@ -220,4 +220,16 @@ function getFullName(item){
 	return [item.firstname,item.lastname]
 	
 };
-console.log(result);
+console.log(result);*/
+
+
+/*for(let i=1;i<100;i++){
+	console.log(i);
+}*/
+
+const digit=['1','2','4','3','5','6','8','7','9','10'];
+
+
+for(let i=10;i<digit.length;i++){
+	console.log(i);
+}
